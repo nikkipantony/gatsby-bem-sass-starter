@@ -27,7 +27,16 @@ const Tints = () => {
     return (
         <section>
             <h2 style={Title}>{TokenName}</h2>
-            <p>Description.</p>
+            {/* Edit tints description to be specific to your design system ↓ */}
+            <p>
+                These are example tint values. Color tints are based on the
+                percentage of white within a color. It is a good idea to scale
+                color tint names between 0 and 100 in design systems. This scale
+                is based on HSL lightness for simplicity and it's also a good
+                ideas to offer just a limited number of shade options to help
+                with consistency, avoid endless decision making and assist with
+                accessibility compliance.
+            </p>
 
             <div
                 style={{
