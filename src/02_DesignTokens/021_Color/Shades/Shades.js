@@ -27,7 +27,16 @@ const Shades = () => {
     return (
         <section>
             <h2 style={Title}>{TokenName}</h2>
-            <p>Description.</p>
+            {/* Edit shades description to be specific to your design system ↓ */}
+            <p>
+                These are example shade values. Shades are based on the
+                percentage of black within a color. It is a good idea to scale
+                color shade names between 0 and 100 in design systems. This
+                scale is based on HSL darkness for simplicity and it's also a
+                good ideas to offer just a limited number of shade options to
+                help with consistency, avoid endless decision making and assist
+                with accessibility compliance.
+            </p>
 
             <div
                 style={{
