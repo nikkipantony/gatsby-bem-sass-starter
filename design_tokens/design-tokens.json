@@ -143,7 +143,7 @@
   },
   {
     "name": "$font-sizes",
-    "value": "( hxl: 3.8125rem, hl: 3.0625rem, hm: 2.4375rem, hs: 1.5625rem, hxs: 1.25rem, hxxs: 1rem, cm: 1rem, cs: 0.8125rem, cxs: 0.625rem, )",
+    "value": "( hxl: 3.8125rem, hl: 3.0625rem, hm: 2.4375rem, hs: 1.5625rem, hxs: 1.25rem, cm: 1rem, cs: 0.8125rem, cxs: 0.625rem, )",
     "mapValue": [
       {
         "name": "hxl",
@@ -171,11 +171,6 @@
         "compiledValue": "1.25rem"
       },
       {
-        "name": "hxxs",
-        "value": "1rem",
-        "compiledValue": "1rem"
-      },
-      {
         "name": "cm",
         "value": "1rem",
         "compiledValue": "1rem"
@@ -191,7 +186,7 @@
         "compiledValue": "0.625rem"
       }
     ],
-    "compiledValue": "(hxl: 3.8125rem, hl: 3.0625rem, hm: 2.4375rem, hs: 1.5625rem, hxs: 1.25rem, hxxs: 1rem, cm: 1rem, cs: 0.8125rem, cxs: 0.625rem)"
+    "compiledValue": "(hxl: 3.8125rem, hl: 3.0625rem, hm: 2.4375rem, hs: 1.5625rem, hxs: 1.25rem, cm: 1rem, cs: 0.8125rem, cxs: 0.625rem)"
   },
   {
     "name": "$font-weights",
