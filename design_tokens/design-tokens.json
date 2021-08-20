@@ -143,27 +143,27 @@
   },
   {
     "name": "$font-sizes",
-    "value": "( hxl: 3rem, hl: 2.5rem, hm: 2rem, hs: 1.625rem, hxs: 1.25rem, hxxs: 1.125rem, cm: 1.125rem, cs: 1rem, cxs: 0.875rem, )",
+    "value": "( hxl: 3.8125rem, hl: 3.0625rem, hm: 2.4375rem, hs: 1.5625rem, hxs: 1.25rem, hxxs: 1rem, cm: 1rem, cs: 0.8125rem, cxs: 0.625rem, )",
     "mapValue": [
       {
         "name": "hxl",
-        "value": "3rem",
-        "compiledValue": "3rem"
+        "value": "3.8125rem",
+        "compiledValue": "3.8125rem"
       },
       {
         "name": "hl",
-        "value": "2.5rem",
-        "compiledValue": "2.5rem"
+        "value": "3.0625rem",
+        "compiledValue": "3.0625rem"
       },
       {
         "name": "hm",
-        "value": "2rem",
-        "compiledValue": "2rem"
+        "value": "2.4375rem",
+        "compiledValue": "2.4375rem"
       },
       {
         "name": "hs",
-        "value": "1.625rem",
-        "compiledValue": "1.625rem"
+        "value": "1.5625rem",
+        "compiledValue": "1.5625rem"
       },
       {
         "name": "hxs",
@@ -172,26 +172,26 @@
       },
       {
         "name": "hxxs",
-        "value": "1.125rem",
-        "compiledValue": "1.125rem"
-      },
-      {
-        "name": "cm",
-        "value": "1.125rem",
-        "compiledValue": "1.125rem"
-      },
-      {
-        "name": "cs",
         "value": "1rem",
         "compiledValue": "1rem"
       },
       {
+        "name": "cm",
+        "value": "1rem",
+        "compiledValue": "1rem"
+      },
+      {
+        "name": "cs",
+        "value": "0.8125rem",
+        "compiledValue": "0.8125rem"
+      },
+      {
         "name": "cxs",
-        "value": "0.875rem",
-        "compiledValue": "0.875rem"
+        "value": "0.625rem",
+        "compiledValue": "0.625rem"
       }
     ],
-    "compiledValue": "(hxl: 3rem, hl: 2.5rem, hm: 2rem, hs: 1.625rem, hxs: 1.25rem, hxxs: 1.125rem, cm: 1.125rem, cs: 1rem, cxs: 0.875rem)"
+    "compiledValue": "(hxl: 3.8125rem, hl: 3.0625rem, hm: 2.4375rem, hs: 1.5625rem, hxs: 1.25rem, hxxs: 1rem, cm: 1rem, cs: 0.8125rem, cxs: 0.625rem)"
   },
   {
     "name": "$font-weights",

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Canvas } from "@storybook/addon-docs"
 
 const FontSizes = () => {
     const data = useStaticQuery(graphql`
@@ -32,50 +33,35 @@ const FontSizes = () => {
         <section>
             <h2 style={Title}>{TokenName}</h2>
             <p className="css-1p8ieni">
-                The `font-size` CSS property sets the size of a font. Changing a
-                font size also updates the sizes of the font size-relative
-                length units, such as `em`.
+                All font sizes in this design system have a ratio of 1.250,
+                known as the Major Third type scale. This means that each size
+                is multiplied or divided by 1.250 from the previous size,
+                starting with the base size (1rem / 16px), and rounded. Custom
+                text (any non-existing typography component) should use a font
+                size from this list.
             </p>
 
-            <div
-                style={{
-                    marginBottom: "40px",
-                }}
-            >
-                <table
-                    className="docblock-argstable css-6hhrgj"
-                    style={{ textAlign: "left" }}
+            <Canvas>
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
                 >
-                    <thead className="docblock-argstable-head">
-                        <tr>
-                            <th style={TableHeading}>{TokenName}</th>
-                        </tr>
-                    </thead>
-                    <tbody className="docblock-argstable-body">
-                        <tr>
-                            <td className="css-4lbn0a">
-                                <span className="css-in3yi3">
-                                    {data.designTokensJson.mapValue.map(
-                                        node => (
-                                            <p
-                                                style={{
-                                                    fontWeight: 700,
-                                                    fontSize: `${node.compiledValue}`,
-                                                    lineHeight: 1,
-                                                    marginBottom: "16px",
-                                                }}
-                                            >
-                                                Font Size {node.name}{" "}
-                                                {node.compiledValue}
-                                            </p>
-                                        )
-                                    )}
-                                </span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                    {data.designTokensJson.mapValue.map(node => (
+                        <p
+                            style={{
+                                fontWeight: 700,
+                                fontSize: `${node.compiledValue}`,
+                                lineHeight: 1,
+                                marginBottom: "16px",
+                            }}
+                        >
+                            {node.name} Visual Type Scale
+                        </p>
+                    ))}
+                </div>
+            </Canvas>
 
             <table
                 className="docblock-argstable css-6hhrgj"
@@ -99,7 +85,11 @@ const FontSizes = () => {
                             </td>
                             <td>
                                 <div className="css-1521b8c">
-                                    <span>{node.compiledValue}</span>
+                                    <span>
+                                        {node.compiledValue} /{" "}
+                                        {node.compiledValue.slice(0, -3) * 16}
+                                        px
+                                    </span>
                                 </div>
                                 <div className="css-fimcbu"></div>
                             </td>

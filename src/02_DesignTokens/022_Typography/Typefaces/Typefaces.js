@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Canvas } from "@storybook/addon-docs"
 
 const Typefaces = () => {
     const data = useStaticQuery(graphql`
@@ -27,37 +28,34 @@ const Typefaces = () => {
     return (
         <section>
             <h2 style={Title}>{TokenName}</h2>
-            <p className="css-1p8ieni">Description.</p>
+            <p className="css-1p8ieni">
+                A typeface is a set of characters of the same design. These
+                characters include letters, numbers, punctuation marks, and
+                symbols.
+            </p>
 
-            <div
-                style={{
-                    marginBottom: "40px",
-                }}
-            >
-                {data.designTokensJson.mapValue.map(node => (
-                    <p
-                        style={{
-                            fontFamily: `${node.compiledValue}`,
-                            fontWeight: 700,
-                            fontSize: "2.5rem",
-                            lineHeight: 1,
-                            marginBottom: "16px",
-                        }}
-                    >
-                        {node.compiledValue}
-                        <span
+            <Canvas>
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
+                >
+                    {data.designTokensJson.mapValue.map(node => (
+                        <p
                             style={{
-                                fontFamily:
-                                    "system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'",
-                                fontSize: "1.125rem",
-                                marginLeft: "14px",
+                                fontFamily: `${node.compiledValue}`,
+                                fontWeight: 700,
+                                fontSize: "2.5rem",
+                                lineHeight: 1,
+                                marginBottom: "16px",
                             }}
                         >
-                            typeface({node.name})
-                        </span>
-                    </p>
-                ))}
-            </div>
+                            {node.compiledValue}
+                        </p>
+                    ))}
+                </div>
+            </Canvas>
 
             <table
                 className="docblock-argstable css-6hhrgj"
