@@ -253,13 +253,24 @@ const TypographyDecisions = () => {
                     </div>
                 </Canvas>
             </section>
+
+            {/* Idiomatic Text */}
+
             <section
                 style={{
                     marginBottom: "40px",
                 }}
             >
                 <h3>Idiomatic Text</h3>
-                <p className="css-1p8ieni">X</p>
+                <p className="css-1p8ieni">
+                    Idiomatic text is a range of text with different semantic
+                    meaning than the surrounding text such as a technical terms,
+                    taxonomical designations, thoughts or words from another
+                    language (which should include the `lang` attribute to
+                    identify the language). The `i` element should be used to
+                    represent this text to help convey meaning when using this
+                    system.
+                </p>
 
                 <Canvas style={{ margin: "0" }}>
                     <div
@@ -268,7 +279,16 @@ const TypographyDecisions = () => {
                             flexDirection: "column",
                         }}
                     >
-                        <p>X</p>
+                        <p>
+                            Examples of <i>idiomatic text</i> could include...{" "}
+                            <br />
+                            "She wondered,{" "}
+                            <i>What is this writer talking about, anyway?</i>"
+                            <br />
+                            or <br />
+                            "The Latin phrase <i>Veni, vidi, vici</i> is often
+                            mentioned in music, art, and literature."
+                        </p>
                     </div>
                 </Canvas>
             </section>

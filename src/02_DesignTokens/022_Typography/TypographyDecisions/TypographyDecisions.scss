@@ -155,6 +155,8 @@ em {
 // The <i> element represents a range of text that is set off from the normal text
 // for some reason, such as idiomatic text, technical terms or taxonomical designations.
 i {
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
     font-style: italic;
     color: brand-color(midnight);
 }
