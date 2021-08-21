@@ -88,14 +88,13 @@ a:visited {
     line-height: leading(regular);
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
-    text-decoration: none;
+    text-decoration: underline;
     border-bottom: border(default);
 
     &:hover,
     &:active,
     &.focus-visible {
         background: brand-color(gold);
-        text-decoration: none;
     }
 }
 
