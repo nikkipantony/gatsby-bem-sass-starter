@@ -8,14 +8,14 @@
 // CSS Reset
 @import "../10_Styles/CSSReset";
 
-// Import Fonts
-@import "../10_styles/Fonts";
-
 // Design Tokens
 @import "../10_Styles/DesignTokens";
 
 // Accessibility Utilities
 @import "../10_Styles/Accessibility";
+
+// Import Typography
+@import "../10_styles/Typography";
 
 // Global (Root and Body)
 @import "../10_Styles/Global";

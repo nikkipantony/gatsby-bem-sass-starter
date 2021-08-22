@@ -1,7 +1,20 @@
 /*
- * Typography Decisions Styles
+ * Typography Styles
  *
  */
+
+// Import Fonts From Goolge Fonts
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:wght@400;700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// To host a font locally create a new folder within this `10_Styles` folder to save the font files within.
+// Then, add your @font-face rules to this file or use the gatsby plugin listed below or typography.js to manage your fonts.
+// For more info see links below:
+// https://www.gatsbyjs.com/docs/recipes/styling-css#adding-a-local-font
+// https://www.gatsbyjs.com/docs/typography-js
+// https://www.gatsbyjs.com/plugins/gatsby-plugin-your-fonts
+// https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+// https://css-tricks.com/snippets/css/using-font-face
+// https://google-webfonts-helper.herokuapp.com/fonts
 
 // Headings
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
