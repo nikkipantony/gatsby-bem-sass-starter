@@ -9,7 +9,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Icon from "../Iconography/Icon"
+import Icon from "../Icon/Icon"
 
 const ExLink = props => {
     return (
