@@ -6,23 +6,22 @@
  */
 
 // CSS Reset
-@import "../10_Styles/CSSReset";
-
-// Import Fonts
-@import "../10_styles/Fonts";
-
-// Design Tokens
-@import "../10_Styles/DesignTokens";
+@import "../10_Styles/01_CSSReset";
 
 // Accessibility Utilities
-@import "../10_Styles/Accessibility";
+@import "../10_Styles/02_Accessibility";
+
+// Design Tokens
+@import "../10_Styles/03_DesignTokens";
 
 // Global (Root and Body)
-@import "../10_Styles/Global";
+@import "../10_Styles/04_Global";
+
+// Import Typography
+@import "../10_styles/05_Typography";
 
 // Atom Styles
-@import "../03_Atoms/Typography/Typography";
-@import "../03_Atoms/Iconography/Icon";
+@import "../03_Atoms/Icon/Icon";
 @import "../03_Atoms/Button/Button";
 @import "../03_Atoms/ExLink/ExLink";
 @import "../03_Atoms/Figure/Figure";

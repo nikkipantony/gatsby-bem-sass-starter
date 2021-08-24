@@ -1,0 +1,19 @@
+/*
+ * Global Styles
+ *
+ */
+
+// Set the root font-size for REMs
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth !important; /* !important used so it is not overwritten in Storybook */
+}
+
+// Set Body Background Color
+body {
+    background-color: brand-color(snow);
+
+    @media (prefers-color-scheme: dark) {
+        background-color: brand-color(midnight);
+    }
+}

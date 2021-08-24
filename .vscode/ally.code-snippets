@@ -369,13 +369,6 @@
 		],
 		  "description": "Font Size H XS"
     },
-    "Font Size hxxs": {
-		"prefix": "fshxxs",
-		"body": [
-      "font-size: font-size(hxxs);",
-		],
-		  "description": "Font Size H XXS"
-    },
     "Font Size Copy Medium": {
 		"prefix": "fscm",
 		"body": [

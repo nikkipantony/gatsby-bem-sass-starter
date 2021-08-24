@@ -1,0 +1,39 @@
+/*
+ * Font Size Design Tokens
+ *
+ */
+
+// Font Size Values
+$font-sizes: (
+    hxl: 3.8125rem,
+    hl: 3.0625rem,
+    hm: 2.4375rem,
+    hs: 1.5625rem,
+    hxs: 1.25rem,
+    cm: 1rem,
+    cs: 0.8125rem,
+    cxs: 0.625rem,
+);
+
+// Font Size Design Tokens Config
+@function font-size($name) {
+    @if map-has-key($font-sizes, $name) {
+        @return map-get($font-sizes, $name);
+    }
+
+    @error "The key #{$name} is not in the $font-sizes design token map";
+    @return null;
+}
+
+// Font Size Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    fshxl   font-size: font-size(hxl);
+    fshl    font-size: font-size(hl);
+    fshm    font-size: font-size(hm);
+    fshs    font-size: font-size(hs);
+    fshsx   font-size: font-size(hxs);
+    fscm    font-size: font-size(cm);
+    fscs    font-size: font-size(cs);
+    fscxs   font-size: font-size(cxs);
+*/

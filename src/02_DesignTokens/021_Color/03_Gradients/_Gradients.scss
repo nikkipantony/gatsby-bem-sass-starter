@@ -1,0 +1,26 @@
+/*
+ * Gradient Design Tokens
+ *
+ */
+
+// Gradient Values
+$gradients: (
+    mgs140: linear-gradient(140deg, #000013 0%, #ffd700 70%, #fcfcfc 90%),
+    gs35: linear-gradient(35deg, #ffd700 0%, #fcfcfc 80%),
+);
+
+// Gradient Design Tokens Config
+@function gradient($name) {
+    @if map-has-key($gradients, $name) {
+        @return map-get($gradients, $name);
+    }
+
+    @error "The key #{$name} is not in the brand $gradients design token map";
+    @return null;
+}
+
+// Gradient Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    g140mgs  background: gradient(140mgs);
+*/

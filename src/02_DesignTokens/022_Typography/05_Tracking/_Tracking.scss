@@ -1,0 +1,27 @@
+/*
+ * Tracking (letter-spacing) Design Tokens
+ *
+ */
+
+// Tracking Values
+$tracking: (
+    normal: 0em,
+    wide: 0.1em,
+);
+
+// Tracking Design Tokens Config
+@function tracking($name) {
+    @if map-has-key($tracking, $name) {
+        @return map-get($tracking, $name);
+    }
+
+    @error "The key #{$name} is not in the $tracking-spacing design token map";
+    @return null;
+}
+
+// Tracking Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    tr  letter-spacing: tracking(normal);
+    tw  letter-spacing: tracking(wide);
+*/

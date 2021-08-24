@@ -1,0 +1,118 @@
+import { Meta, Canvas } from '@storybook/addon-docs';
+
+import BrandColors from '../021_Color/01_BrandColors/BrandColors';
+import ActionColors from '../021_Color/02_ActionColors/ActionColors';
+import Gradients from '../021_Color/03_Gradients/Gradients';
+import Opacity from '../021_Color/04_Opacity/Opacity';
+import Shades from '../021_Color/05_Shades/Shades';
+import Tints from '../021_Color/06_Tints/Tints';
+
+<Meta title="Design Tokens/Color" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
+
+# Color Design Tokens
+
+Design tokens are design decisions, represented as data, that ensure systematically unified and 
+cohesive product experiences. On this page you will find example color design tokens to be used 
+within the design system. Extra rules, best practices and examples of how color should and 
+should not be used can also be added to this page as the desgin system develops and these decions 
+have been made to aid designers making future design decions for components within the system.
+
+<div style={{ maxWidth: "500px", boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0", border: "2px solid rgba(0, 0, 13, 1)", borderRadius: "4px", padding: "30px", marginTop: "20px", }}>
+
+## Contents
+
+<nav>
+<ul style={{ marginTop: "20px", paddingLeft: "20px" }}>
+    <li><a href="#Brand">Brand Color Tokens</a></li>
+    <li><a href="#Action">Action Color Tokens</a></li>
+    <li><a href="#Gradients">Gradient Tokens</a></li>
+    <li><a href="#Opacity">Opacity Tokens</a></li>
+    <li><a href="#Shades">Shade Tokens</a></li>
+    <li><a href="#Tints">Tint Tokens</a></li>
+</ul>
+</nav>
+
+</div>
+
+<div id="Brand" style={{ marginTop: "80px", }}></div>
+
+## Brand Color Tokens
+
+These are example brand colors. Brand colors are a chosen color
+palette used to represent a certain company. A consistent and
+strategic application of brand colors can increase brand
+awareness and recognizability as well as improved design
+consistency and there for give a better user experience and help
+build a greater trust in a company.
+
+<BrandColors />
+
+
+<div id="Action" style={{ marginTop: "80px", }}></div>
+
+## Action Color Tokens
+
+These are example action colors. Action colors are semantic
+colors used to communicate to a user with a specific purpose.
+For example, Green has a positive connotation so it is commonly
+used as an action color to convey success.
+
+<ActionColors />
+
+
+<div id="Gradients" style={{ marginTop: "80px", }}></div>
+
+## Gradient Tokens
+
+These are example color gradients. Gradients can be used within
+user interfaces when being built with design systems to give
+more creative freedom to designers. While flat colors brings
+consistency it can also sometimes stifle a design's potential,
+gradients can open the door to infinite possibilities. Through
+blending brand colors, designers can create eye-catching and
+more memorable visual designs and brand identities.
+
+<Gradients />
+
+
+<div id="Opacity" style={{ marginTop: "80px", }}></div>
+
+## Opacity Tokens
+
+These are example opacity values. In design opacity refers to
+how transparent an object is. Objects with lower opacity allow
+more light to pass through them, therefore becoming more
+see-through. The more solid an object is, the less light that
+can pass through it which translates to a higher opacity.
+
+<Opacity />
+
+
+<div id="Shades" style={{ marginTop: "80px", }}></div>
+
+## Shade Tokens
+
+These are example shade values. Color shades are based on the
+percentage of black within a color. It is a good idea to scale
+color shade names between 0 and 100 in design systems. This
+scale is based on HSL darkness for simplicity and it's also a
+good ideas to offer just a limited number of shade options to
+help with consistency, avoid endless decision making and assist
+with accessibility compliance.
+
+<Shades />
+
+
+<div id="Tints" style={{ marginTop: "80px", }}></div>
+
+## Tint Tokens
+
+These are example tint values. Color tints are based on the
+percentage of white within a color. It is a good idea to scale
+color tint names between 0 and 100 in design systems. This scale
+is based on HSL lightness for simplicity and it's also a good
+ideas to offer just a limited number of shade options to help
+with consistency, avoid endless decision making and assist with
+accessibility compliance.
+
+<Tints />

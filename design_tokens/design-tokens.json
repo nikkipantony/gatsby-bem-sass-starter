@@ -1,27 +1,5 @@
 [
   {
-    "name": "$action-colors",
-    "value": "( success: #18d14c, warning: #ff9d00, error: #f30b17, )",
-    "mapValue": [
-      {
-        "name": "success",
-        "value": "#18d14c",
-        "compiledValue": "#18d14c"
-      },
-      {
-        "name": "warning",
-        "value": "#ff9d00",
-        "compiledValue": "#ff9d00"
-      },
-      {
-        "name": "error",
-        "value": "#f30b17",
-        "compiledValue": "#f30b17"
-      }
-    ],
-    "compiledValue": "(success: #18d14c, warning: #ff9d00, error: #f30b17)"
-  },
-  {
     "name": "$brand-colors",
     "value": "( snow: #fcfcfc, midnight: #000013, gold: #ffd700, )",
     "mapValue": [
@@ -44,16 +22,43 @@
     "compiledValue": "(snow: #fcfcfc, midnight: #000013, gold: #ffd700)"
   },
   {
-    "name": "$gradients",
-    "value": "( 140mgs: linear-gradient(140deg, #000013 0%, #ffd700 50%, #fcfcfc 100%), )",
+    "name": "$action-colors",
+    "value": "( success: #18d14c, warning: #ff9d00, error: #f30b17, )",
     "mapValue": [
       {
-        "name": "mgs",
-        "value": "linear-gradient(140deg, #000013 0%, #ffd700 50%, #fcfcfc 100%)",
-        "compiledValue": "linear-gradient(140deg, #000013 0%, #ffd700 50%, #fcfcfc 100%)"
+        "name": "success",
+        "value": "#18d14c",
+        "compiledValue": "#18d14c"
+      },
+      {
+        "name": "warning",
+        "value": "#ff9d00",
+        "compiledValue": "#ff9d00"
+      },
+      {
+        "name": "error",
+        "value": "#f30b17",
+        "compiledValue": "#f30b17"
       }
     ],
-    "compiledValue": "(140mgs: linear-gradient(140deg, #000013 0%, #ffd700 50%, #fcfcfc 100%))"
+    "compiledValue": "(success: #18d14c, warning: #ff9d00, error: #f30b17)"
+  },
+  {
+    "name": "$gradients",
+    "value": "( mgs140: linear-gradient(140deg, #000013 0%, #ffd700 70%, #fcfcfc 90%), gs35: linear-gradient(35deg, #ffd700 0%, #fcfcfc 80%), )",
+    "mapValue": [
+      {
+        "name": "mgs140",
+        "value": "linear-gradient(140deg, #000013 0%, #ffd700 70%, #fcfcfc 90%)",
+        "compiledValue": "linear-gradient(140deg, #000013 0%, #ffd700 70%, #fcfcfc 90%)"
+      },
+      {
+        "name": "gs35",
+        "value": "linear-gradient(35deg, #ffd700 0%, #fcfcfc 80%)",
+        "compiledValue": "linear-gradient(35deg, #ffd700 0%, #fcfcfc 80%)"
+      }
+    ],
+    "compiledValue": "(mgs140: linear-gradient(140deg, #000013 0%, #ffd700 70%, #fcfcfc 90%), gs35: linear-gradient(35deg, #ffd700 0%, #fcfcfc 80%))"
   },
   {
     "name": "$opacities",
@@ -137,28 +142,65 @@
     "compiledValue": "(t20: 20%, t40: 40%, t60: 60%, t80: 80%)"
   },
   {
+    "name": "$rubik",
+    "value": "\"Rubik\", sans-serif",
+    "compiledValue": "Rubik, sans-serif"
+  },
+  {
+    "name": "$archivo",
+    "value": "\"Archivo\", sans-serif",
+    "compiledValue": "Archivo, sans-serif"
+  },
+  {
+    "name": "$mono",
+    "value": "\"IBM Plex Mono\", monospace",
+    "compiledValue": "IBM Plex Mono, monospace"
+  },
+  {
+    "name": "$typefaces",
+    "value": "( rubik: $rubik, archivo: $archivo, mono: $mono, )",
+    "mapValue": [
+      {
+        "name": "rubik",
+        "value": "$rubik",
+        "compiledValue": "Rubik, sans-serif"
+      },
+      {
+        "name": "archivo",
+        "value": "$archivo",
+        "compiledValue": "Archivo, sans-serif"
+      },
+      {
+        "name": "mono",
+        "value": "$mono",
+        "compiledValue": "IBM Plex Mono, monospace"
+      }
+    ],
+    "compiledValue": "(rubik: \"Rubik\", sans-serif, archivo: \"Archivo\", sans-serif, mono: \"IBM Plex Mono\", monospace)"
+  },
+  {
     "name": "$font-sizes",
-    "value": "( hxl: 3rem, hl: 2.5rem, hm: 2rem, hs: 1.625rem, hxs: 1.25rem, hxxs: 1.125rem, cm: 1.125rem, cs: 1rem, cxs: 0.875rem, )",
+    "value": "( hxl: 3.8125rem, hl: 3.0625rem, hm: 2.4375rem, hs: 1.5625rem, hxs: 1.25rem, cm: 1rem, cs: 0.8125rem, cxs: 0.625rem, )",
     "mapValue": [
       {
         "name": "hxl",
-        "value": "3rem",
-        "compiledValue": "3rem"
+        "value": "3.8125rem",
+        "compiledValue": "3.8125rem"
       },
       {
         "name": "hl",
-        "value": "2.5rem",
-        "compiledValue": "2.5rem"
+        "value": "3.0625rem",
+        "compiledValue": "3.0625rem"
       },
       {
         "name": "hm",
-        "value": "2rem",
-        "compiledValue": "2rem"
+        "value": "2.4375rem",
+        "compiledValue": "2.4375rem"
       },
       {
         "name": "hs",
-        "value": "1.625rem",
-        "compiledValue": "1.625rem"
+        "value": "1.5625rem",
+        "compiledValue": "1.5625rem"
       },
       {
         "name": "hxs",
@@ -166,27 +208,22 @@
         "compiledValue": "1.25rem"
       },
       {
-        "name": "hxxs",
-        "value": "1.125rem",
-        "compiledValue": "1.125rem"
-      },
-      {
         "name": "cm",
-        "value": "1.125rem",
-        "compiledValue": "1.125rem"
-      },
-      {
-        "name": "cs",
         "value": "1rem",
         "compiledValue": "1rem"
       },
       {
+        "name": "cs",
+        "value": "0.8125rem",
+        "compiledValue": "0.8125rem"
+      },
+      {
         "name": "cxs",
-        "value": "0.875rem",
-        "compiledValue": "0.875rem"
+        "value": "0.625rem",
+        "compiledValue": "0.625rem"
       }
     ],
-    "compiledValue": "(hxl: 3rem, hl: 2.5rem, hm: 2rem, hs: 1.625rem, hxs: 1.25rem, hxxs: 1.125rem, cm: 1.125rem, cs: 1rem, cxs: 0.875rem)"
+    "compiledValue": "(hxl: 3.8125rem, hl: 3.0625rem, hm: 2.4375rem, hs: 1.5625rem, hxs: 1.25rem, cm: 1rem, cs: 0.8125rem, cxs: 0.625rem)"
   },
   {
     "name": "$font-weights",
@@ -224,57 +261,20 @@
   },
   {
     "name": "$tracking",
-    "value": "( normal: \"normal\", wide: 0.1rem, )",
+    "value": "( normal: 0em, wide: 0.1em, )",
     "mapValue": [
       {
         "name": "normal",
-        "value": "normal",
-        "compiledValue": "normal"
+        "value": "0em",
+        "compiledValue": "0em"
       },
       {
         "name": "wide",
-        "value": "0.1rem",
-        "compiledValue": "0.1rem"
+        "value": "0.1em",
+        "compiledValue": "0.1em"
       }
     ],
-    "compiledValue": "(normal: \"normal\", wide: 0.1rem)"
-  },
-  {
-    "name": "$rubik",
-    "value": "\"Rubik\", sans-serif",
-    "compiledValue": "Rubik, sans-serif"
-  },
-  {
-    "name": "$archivo",
-    "value": "\"Archivo\", sans-serif",
-    "compiledValue": "Archivo, sans-serif"
-  },
-  {
-    "name": "$mono",
-    "value": "\"IBM Plex Mono\", monospace",
-    "compiledValue": "IBM Plex Mono, monospace"
-  },
-  {
-    "name": "$typefaces",
-    "value": "( rubik: $rubik, archivo: $archivo, mono: $mono, )",
-    "mapValue": [
-      {
-        "name": "rubik",
-        "value": "$rubik",
-        "compiledValue": "Rubik, sans-serif"
-      },
-      {
-        "name": "archivo",
-        "value": "$archivo",
-        "compiledValue": "Archivo, sans-serif"
-      },
-      {
-        "name": "mono",
-        "value": "$mono",
-        "compiledValue": "IBM Plex Mono, monospace"
-      }
-    ],
-    "compiledValue": "(rubik: \"Rubik\", sans-serif, archivo: \"Archivo\", sans-serif, mono: \"IBM Plex Mono\", monospace)"
+    "compiledValue": "(normal: 0em, wide: 0.1em)"
   },
   {
     "name": "$icon-sizes",
@@ -329,6 +329,18 @@
       }
     ],
     "compiledValue": "(xs: 380px, s: 500px, m: 950px, l: 1200px, xl: 1600px)"
+  },
+  {
+    "name": "$wrappers",
+    "value": "( SiteMaxWidth: 1600px, )",
+    "mapValue": [
+      {
+        "name": "SiteMaxWidth",
+        "value": "1600px",
+        "compiledValue": "1600px"
+      }
+    ],
+    "compiledValue": "(SiteMaxWidth: 1600px)"
   },
   {
     "name": "$spacing",
@@ -393,18 +405,6 @@
     "compiledValue": "(xxxxs: 0.0625rem, xxxs: 0.125rem, xxs: 0.25rem, xs: 0.5rem, s: 0.75rem, m: 1rem, l: 1.5rem, xl: 2rem, xxl: 2.5rem, xxxl: 3rem, xxxxl: 3.5rem)"
   },
   {
-    "name": "$wrappers",
-    "value": "( SiteMaxWidth: 1600px, )",
-    "mapValue": [
-      {
-        "name": "SiteMaxWidth",
-        "value": "1600px",
-        "compiledValue": "1600px"
-      }
-    ],
-    "compiledValue": "(SiteMaxWidth: 1600px)"
-  },
-  {
     "name": "$zlayers",
     "value": "( SkipLink: 10, Header: 5, Footer: 5, )",
     "mapValue": [
@@ -444,6 +444,18 @@
     "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px)"
   },
   {
+    "name": "$shadows",
+    "value": "( default: 0.75rem 0.75rem 0 0 #000013, )",
+    "mapValue": [
+      {
+        "name": "default",
+        "value": "0.75rem 0.75rem 0 0 #000013",
+        "compiledValue": "0.75rem 0.75rem 0 0 #000013"
+      }
+    ],
+    "compiledValue": "(default: 0.75rem 0.75rem 0 0 #000013)"
+  },
+  {
     "name": "$radii",
     "value": "( square: 0px, rounded: 3px, )",
     "mapValue": [
@@ -461,16 +473,16 @@
     "compiledValue": "(square: 0px, rounded: 3px)"
   },
   {
-    "name": "$shadows",
-    "value": "( default: 0.75rem 0.75rem 0 0 #000013, )",
+    "name": "$transitions",
+    "value": "( ease-in-out: 0.2s ease-in-out, )",
     "mapValue": [
       {
-        "name": "default",
-        "value": "0.75rem 0.75rem 0 0 #000013",
-        "compiledValue": "0.75rem 0.75rem 0 0 #000013"
+        "name": "ease-in-out",
+        "value": "0.2s ease-in-out",
+        "compiledValue": "0.2s ease-in-out"
       }
     ],
-    "compiledValue": "(default: 0.75rem 0.75rem 0 0 #000013)"
+    "compiledValue": "(ease-in-out: 0.2s ease-in-out)"
   },
   {
     "name": "$keyframe-animations",
@@ -483,17 +495,5 @@
       }
     ],
     "compiledValue": "(fadeIn: fadeIn 300ms ease-in)"
-  },
-  {
-    "name": "$transitions",
-    "value": "( ease-in-out: 0.2s ease-in-out, )",
-    "mapValue": [
-      {
-        "name": "ease-in-out",
-        "value": "0.2s ease-in-out",
-        "compiledValue": "0.2s ease-in-out"
-      }
-    ],
-    "compiledValue": "(ease-in-out: 0.2s ease-in-out)"
   }
 ]
