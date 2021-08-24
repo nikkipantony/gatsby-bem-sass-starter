@@ -15,10 +15,6 @@ const FontWeights = () => {
         }
     `)
 
-    const VariableName = data.designTokensJson.name // Variable name
-    const Name = VariableName.substring(1) // Remove `$` from variable name
-    const TokenName = Name.replace(/-/g, " ") // Replace hyphens `-` with space ` `
-
     return (
         <>
             <Canvas
