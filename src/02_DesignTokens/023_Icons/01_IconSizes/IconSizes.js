@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Canvas } from "@storybook/addon-docs"
 
 const IconSizes = () => {
     const data = useStaticQuery(graphql`
@@ -14,49 +15,47 @@ const IconSizes = () => {
         }
     `)
 
-    const VariableName = data.designTokensJson.name // Variable name
-    const Name = VariableName.substring(1) // Remove `$` from variable name
-    const TokenName = Name.replace(/-/g, " ") // Replace hyphens `-` with space ` `
-
-    const Title = {
-        textTransform: "capitalize",
-        marginTop: "80px",
-        lineHeight: "1",
-    }
-
     return (
-        <section>
-            <h3 style={Title}>{TokenName}</h3>
-            <p>Description.</p>
-
-            <div>
-                {data.designTokensJson.mapValue.map(node => (
-                    <div
-                        style={{
-                            display: "flex",
-                            paddingBottom: "20px",
-                        }}
-                    >
+        <>
+            <Canvas
+                style={{
+                    margin: "0",
+                }}
+            >
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
+                >
+                    {data.designTokensJson.mapValue.map(node => (
                         <div
                             style={{
-                                width: `${node.compiledValue}`,
-                                height: `${node.compiledValue}`,
-                                backgroundColor: "#000013",
-                                margin: "auto 0",
-                            }}
-                        ></div>
-                        <p
-                            style={{
-                                fontWeight: 700,
-                                margin: "auto 0 auto 14px",
-                                padding: "0",
+                                display: "flex",
+                                paddingBottom: "20px",
                             }}
                         >
-                            icon-size({node.name})
-                        </p>
-                    </div>
-                ))}
-            </div>
+                            <div
+                                style={{
+                                    width: `${node.compiledValue}`,
+                                    height: `${node.compiledValue}`,
+                                    backgroundColor: "#000013",
+                                    margin: "auto 0",
+                                }}
+                            ></div>
+                            <p
+                                style={{
+                                    fontWeight: 700,
+                                    margin: "auto 0 auto 14px",
+                                    padding: "0",
+                                }}
+                            >
+                                icon-size({node.name})
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </Canvas>
 
             <table
                 className="docblock-argstable css-6hhrgj"
@@ -99,7 +98,7 @@ const IconSizes = () => {
                     ))}
                 </tbody>
             </table>
-        </section>
+        </>
     )
 }
 

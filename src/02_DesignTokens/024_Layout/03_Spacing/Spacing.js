@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Canvas } from "@storybook/addon-docs"
 
 const Spacing = () => {
     const data = useStaticQuery(graphql`
@@ -14,55 +15,49 @@ const Spacing = () => {
         }
     `)
 
-    const VariableName = data.designTokensJson.name // Variable name
-    const Name = VariableName.substring(1) // Remove `$` from variable name
-    const TokenName = Name.replace(/-/g, " ") // Replace hyphens `-` with space ` `
-
-    const Title = {
-        textTransform: "capitalize",
-        marginTop: "80px",
-        lineHeight: "1",
-    }
-
     return (
-        <section>
-            <h3 style={Title}>{TokenName}</h3>
-            <p>Description.</p>
-
-            <div
+        <>
+            <Canvas
                 style={{
-                    marginBottom: "30px",
+                    margin: "0",
                 }}
             >
-                {data.designTokensJson.mapValue.map(node => (
-                    <div
-                        style={{
-                            display: "flex",
-                            alignContent: "center",
-                        }}
-                    >
+                <div
+                    style={{
+                        display: "flex",
+                        flexDirection: "column",
+                    }}
+                >
+                    {data.designTokensJson.mapValue.map(node => (
                         <div
                             style={{
-                                height: "30px",
-                                width: `${node.compiledValue}`,
-                                backgroundColor: "#000013",
-                                marginBottom: "14px",
-                            }}
-                        ></div>
-                        <p
-                            style={{
-                                color: "#000013",
-                                fontSize: "1rem",
-                                fontWeight: "700",
-                                lineHeight: "30px",
-                                paddingLeft: "14px",
+                                display: "flex",
+                                alignContent: "center",
                             }}
                         >
-                            spacing({node.name})
-                        </p>
-                    </div>
-                ))}
-            </div>
+                            <div
+                                style={{
+                                    height: "30px",
+                                    width: `${node.compiledValue}`,
+                                    backgroundColor: "#000013",
+                                    marginBottom: "14px",
+                                }}
+                            ></div>
+                            <p
+                                style={{
+                                    color: "#000013",
+                                    fontSize: "1rem",
+                                    fontWeight: "700",
+                                    lineHeight: "30px",
+                                    paddingLeft: "14px",
+                                }}
+                            >
+                                spacing({node.name})
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </Canvas>
 
             <table
                 className="docblock-argstable css-6hhrgj"
@@ -108,7 +103,7 @@ const Spacing = () => {
                     ))}
                 </tbody>
             </table>
-        </section>
+        </>
     )
 }
 
