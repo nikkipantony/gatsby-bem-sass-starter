@@ -38,8 +38,16 @@ const Tracking = () => {
                                 marginBottom: "16px",
                             }}
                         >
-                            {node.compiledValue.slice(0, -2)} {node.name}{" "}
-                            Tracking
+                            {node.name} Tracking
+                            <span
+                                className={`ally-canvas__figure-caption`}
+                                style={{
+                                    letterSpacing: "0",
+                                    paddingLeft: "6px",
+                                }}
+                            >
+                                {node.name} | {node.compiledValue}
+                            </span>
                         </p>
                     ))}
                 </div>

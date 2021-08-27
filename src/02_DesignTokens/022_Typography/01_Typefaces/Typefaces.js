@@ -29,12 +29,16 @@ const Typefaces = () => {
                             style={{
                                 fontFamily: `${node.compiledValue}`,
                                 fontWeight: 700,
-                                fontSize: "2.5rem",
+                                fontSize: "2rem",
                                 lineHeight: 1,
                                 marginBottom: "16px",
+                                textTransform: "capitalize",
                             }}
                         >
-                            {node.compiledValue}
+                            {node.compiledValue} Typeface{" "}
+                            <span className={`ally-canvas__figure-caption`}>
+                                {node.name} | {node.compiledValue}
+                            </span>
                         </p>
                     ))}
                 </div>

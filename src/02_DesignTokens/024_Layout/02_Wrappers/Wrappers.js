@@ -31,6 +31,8 @@ const Wrappers = () => {
                     {data.designTokensJson.mapValue.map(node => (
                         <div
                             style={{
+                                display: "flex",
+                                alignItems: "center",
                                 height: "50px",
                                 width: `${node.compiledValue}`,
                                 backgroundColor: "#000013",
@@ -38,15 +40,17 @@ const Wrappers = () => {
                             }}
                         >
                             <p
+                                className={`ally-canvas__figure-caption`}
                                 style={{
                                     color: "#fcfcfc",
                                     fontSize: "1rem",
                                     fontWeight: "700",
-                                    lineHeight: "50px",
-                                    paddingLeft: "14px",
+                                    padding: "0 0 0 14px",
+                                    lineHeight: "34px",
+                                    marginBottom: "0",
                                 }}
                             >
-                                wrapper({node.name})
+                                {node.name} | {node.compiledValue}
                             </p>
                         </div>
                     ))}

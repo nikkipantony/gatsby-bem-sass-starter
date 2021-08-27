@@ -47,15 +47,12 @@ const Shadows = () => {
                                 }}
                             ></div>
                             <figcaption
+                                className={`ally-canvas__figure-caption`}
                                 style={{
-                                    color: "#000013",
-                                    fontSize: "1.125rem",
-                                    fontWeight: "700",
-                                    textAlign: "left",
-                                    padding: "0.4rem 0 2.5rem",
+                                    marginTop: "10px",
                                 }}
                             >
-                                shadow({node.name})
+                                {node.name} | {node.compiledValue}
                             </figcaption>
                         </figure>
                     ))}

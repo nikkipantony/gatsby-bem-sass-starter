@@ -18,58 +18,44 @@ const Opacity = () => {
     return (
         <>
             <Canvas
+                className={`ally-canvas`}
                 style={{
                     margin: "0",
                 }}
             >
                 <div
+                    className={`ally-canvas__palette-wrapper`}
                     style={{
-                        display: "flex",
+                        display: "inline-flex",
                         flexWrap: "wrap",
+                        justifyContent: "spaceBetween",
+                        width: "100%",
                     }}
                 >
                     {data.designTokensJson.mapValue.map(node => (
-                        <figure
-                            style={{
-                                margin: "0 36px 10px 30px",
-                                minWidth: "200px",
-                                maxWidth: "200px",
-                            }}
-                        >
-                            <div
-                                style={{
-                                    borderRadius: "4px",
-                                    border: "2px solid #000013",
-                                    boxShadow: "rgba(0, 0, 0, 0.1) 0 4px 6px 0",
-                                }}
-                            >
+                        <div className={`ally-canvas__figure-wrapper`}>
+                            <figure className={`ally-canvas__figure`}>
                                 <div
+                                    className={`ally-canvas__figure-display`}
                                     style={{
-                                        height: "120px",
-                                        width: "100%",
-                                        borderRadius: "1px",
-                                        opacity: `${node.compiledValue}`,
                                         display: "grid",
-                                        backgroundColor: "#18d14c",
+                                        opacity: `${node.compiledValue}`,
+                                        background: "#18d14c",
                                     }}
                                 >
                                     <div style={{ margin: "auto" }}>
-                                        <b>Opacity</b>
+                                        <p>
+                                            <b>Opacity</b>
+                                        </p>
                                     </div>
                                 </div>
-                            </div>
-                            <figcaption
-                                style={{
-                                    color: "#000013",
-                                    fontSize: "1.125rem",
-                                    fontWeight: "700",
-                                    textAlign: "left",
-                                    padding: "0.4rem 0 2.5rem",
-                                }}
-                            >
-                                opacity({node.name})
-                            </figcaption>
-                        </figure>
+                                <figcaption
+                                    className={`ally-canvas__figure-caption`}
+                                >
+                                    {node.name} | {node.compiledValue}
+                                </figcaption>
+                            </figure>
+                        </div>
                     ))}
                 </div>
             </Canvas>

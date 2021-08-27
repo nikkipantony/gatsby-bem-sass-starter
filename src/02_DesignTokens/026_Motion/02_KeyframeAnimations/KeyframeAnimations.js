@@ -54,15 +54,9 @@ const KeyFrameAnimations = () => {
                                 Click To Reload
                             </div>
                             <figcaption
-                                style={{
-                                    color: "#000013",
-                                    fontSize: "1.125rem",
-                                    fontWeight: "700",
-                                    textAlign: "left",
-                                    padding: "0.4rem 0 2.5rem",
-                                }}
+                                className={`ally-canvas__figure-caption`}
                             >
-                                animation({node.name})
+                                {node.name} | {node.compiledValue}
                             </figcaption>
                         </figure>
                     ))}

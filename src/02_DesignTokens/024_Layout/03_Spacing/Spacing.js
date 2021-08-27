@@ -44,15 +44,14 @@ const Spacing = () => {
                                 }}
                             ></div>
                             <p
+                                className={`ally-canvas__figure-caption`}
                                 style={{
-                                    color: "#000013",
-                                    fontSize: "1rem",
-                                    fontWeight: "700",
-                                    lineHeight: "30px",
-                                    paddingLeft: "14px",
+                                    fontWeight: 700,
+                                    margin: "auto 0 18px 14px",
+                                    padding: "0",
                                 }}
                             >
-                                spacing({node.name})
+                                {node.name} | {node.compiledValue}
                             </p>
                         </div>
                     ))}

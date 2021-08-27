@@ -29,23 +29,35 @@ const Leading = () => {
                     }}
                 >
                     {data.designTokensJson.mapValue.map(node => (
-                        <p
+                        <div
                             style={{
-                                textTransform: "capitalize",
-                                lineHeight: `${node.compiledValue}`,
-                                fontWeight: 700,
-                                fontSize: "2rem",
-                                maxWidth: "500px",
-                                color: "#000013",
-                                background: "rgba(0, 0, 19, .1)",
-                                borderTop: "2px solid #000013",
-                                borderBottom: "2px solid #000013",
-                                padding: "0 10px",
-                                marginBottom: "16px",
+                                display: "flex",
+                                flexDirection: "row",
+                                alignItems: "baseline",
                             }}
                         >
-                            {node.compiledValue} {node.name} Leading
-                        </p>
+                            <p
+                                style={{
+                                    textTransform: "capitalize",
+                                    lineHeight: `${node.compiledValue}`,
+                                    fontWeight: 700,
+                                    fontSize: "2rem",
+                                    maxWidth: "500px",
+                                    color: "#000013",
+                                    padding: "0 10px",
+                                    marginBottom: "16px",
+                                    marginRight: "6px",
+                                    background: "rgba(0, 0, 19, .1)",
+                                    borderTop: "2px dashed #000013",
+                                    borderBottom: "2px dashed #000013",
+                                }}
+                            >
+                                {node.name} Leading
+                            </p>
+                            <p className={`ally-canvas__figure-caption`}>
+                                {node.name} | {node.compiledValue}
+                            </p>
+                        </div>
                     ))}
                 </div>
             </Canvas>

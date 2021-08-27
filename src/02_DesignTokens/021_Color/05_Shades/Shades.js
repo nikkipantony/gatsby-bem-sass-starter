@@ -15,67 +15,36 @@ const Shades = () => {
         }
     `)
 
-    const VariableName = data.designTokensJson.name // Variable name
-    const Name = VariableName.substring(1) // Remove `$` from variable name
-    const TokenName = Name.replace(/-/g, " ") // Replace hyphens `-` with space ` `
-
-    const Title = {
-        textTransform: "capitalize",
-        marginTop: "80px",
-        lineHeight: "1",
-    }
-
     return (
         <>
-            <Canvas
-                style={{
-                    margin: "0",
-                }}
-            >
-                <div
-                    style={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                    }}
-                >
+            <Canvas className={`ally-canvas`}>
+                <div className={`ally-canvas__palette-wrapper`}>
                     {data.designTokensJson.mapValue.map(node => (
-                        <figure
-                            style={{
-                                margin: "0 36px 10px 30px",
-                                minWidth: "200px",
-                                maxWidth: "200px",
-                            }}
-                        >
-                            <div
-                                style={{
-                                    borderRadius: "4px",
-                                    border: "2px solid #000013",
-                                    boxShadow: "rgba(0, 0, 0, 0.1) 0 4px 6px 0",
-                                    backgroundColor: "#18d14c",
-                                }}
-                            >
+                        <div className={`ally-canvas__figure-wrapper`}>
+                            <figure className={`ally-canvas__figure`}>
                                 <div
+                                    className={`ally-canvas__figure-display`}
                                     style={{
-                                        height: "120px",
-                                        width: "100%",
-                                        backgroundColor: "#000",
-                                        borderRadius: "1px",
-                                        opacity: `${node.compiledValue}`,
+                                        background: "#18d14c",
                                     }}
-                                ></div>
-                            </div>
-                            <figcaption
-                                style={{
-                                    color: "#000013",
-                                    fontSize: "1.125rem",
-                                    fontWeight: "700",
-                                    textAlign: "left",
-                                    padding: "0.4rem 0 2.5rem",
-                                }}
-                            >
-                                shade(action-color(success), {node.name})
-                            </figcaption>
-                        </figure>
+                                >
+                                    <div
+                                        style={{
+                                            height: "100%",
+                                            width: "100%",
+                                            backgroundColor: `#000`,
+                                            borderRadius: "2px",
+                                            opacity: `${node.compiledValue}`,
+                                        }}
+                                    ></div>
+                                </div>
+                                <figcaption
+                                    className={`ally-canvas__figure-caption`}
+                                >
+                                    {node.name} | {node.compiledValue}
+                                </figcaption>
+                            </figure>
+                        </div>
                     ))}
                 </div>
             </Canvas>

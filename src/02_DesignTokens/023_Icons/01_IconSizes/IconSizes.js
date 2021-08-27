@@ -44,13 +44,14 @@ const IconSizes = () => {
                                 }}
                             ></div>
                             <p
+                                className={`ally-canvas__figure-caption`}
                                 style={{
                                     fontWeight: 700,
-                                    margin: "auto 0 auto 14px",
+                                    margin: "2px 0 0 14px",
                                     padding: "0",
                                 }}
                             >
-                                icon-size({node.name})
+                                {node.name} | {node.compiledValue}
                             </p>
                         </div>
                     ))}

@@ -38,7 +38,10 @@ const FontWeights = () => {
                                 marginBottom: "16px",
                             }}
                         >
-                            {node.compiledValue} {node.name} Font Weight
+                            {node.name} Font Weight{" "}
+                            <span className={`ally-canvas__figure-caption`}>
+                                {node.name} | {node.compiledValue}
+                            </span>
                         </p>
                     ))}
                 </div>

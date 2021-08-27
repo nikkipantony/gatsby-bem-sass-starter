@@ -37,7 +37,10 @@ const FontSizes = () => {
                                 marginBottom: "16px",
                             }}
                         >
-                            {node.name} Visual Type Scale
+                            {node.name} Font Size{" "}
+                            <span className={`ally-canvas__figure-caption`}>
+                                {node.name} | {node.compiledValue}
+                            </span>
                         </p>
                     ))}
                 </div>
