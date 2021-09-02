@@ -9,12 +9,12 @@ design systems typography design tokens. This guide shows the correct
 use of HTML5 markup to be used as well as styling for consistency 
 to create a higher level of accessibility for products built with this system.
 
-<div style={{ maxWidth: "500px", boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0", border: "2px solid rgba(0, 0, 13, 1)", borderRadius: "4px", padding: "30px", marginTop: "20px", }}>
+<div style={{ width: "100%", boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0", border: "2px solid rgba(0, 0, 13, 1)", borderRadius: "4px", padding: "30px", marginTop: "20px", }}>
 
 ## Contents
 
-<nav>
-<ul style={{ marginTop: "20px", paddingLeft: "20px" }}>
+<nav style={{ display: "flex", flexFlow: "row", flexWrap: "wrap", maxWidth: "500px", justifyContent: "space-between", }}>
+<ul style={{ marginTop: "20px", paddingLeft: "20px", }}>
     <li><a href="#Headings">Headings</a></li>
     <li><a href="#Paragraphs">Paragraphs</a></li>
     <li><a href="#Links">Links</a></li>
@@ -27,6 +27,8 @@ to create a higher level of accessibility for products built with this system.
     <li><a href="#Strike">Strikethrough</a></li>
     <li><a href="#Delete">Delete / Insert</a></li>
     <li><a href="#Hightlighting">Hightlighting</a></li>
+</ul>
+<ul style={{ marginTop: "20px", paddingLeft: "20px",  }}>
     <li><a href="#Quotation">Quotation</a></li>
     <li><a href="#Citation">Citation</a></li>
     <li><a href="#Abb">Abbreviation</a></li>
@@ -48,13 +50,14 @@ to create a higher level of accessibility for products built with this system.
 
 ## Headings
 
-The `h1` to `h6` elements represent six levels of section
-and/or page headings with `h1` being at the highest
-hierarchical level and `h6` being at the lowest. You should
-only use one `h1` per page. However, using more than one
-will not result in an error, but using only one is seen as a
-best practice. Having a single top-level title is also
-arguably better for screenreader users, and for SEO.
+Headings are typography components used to create various 
+levels of hierarchies between text. The `h1` to `h6` elements 
+represent the six levels of section and/or page headings with 
+`h1` being at the highest hierarchical level and `h6` being at 
+the lowest. You should only use one `h1` per page. However, 
+using more than one will not result in an error, but using only 
+one is seen as best practice. Having a single top-level title is 
+also arguably better for screenreader users, and for SEO.
 
 <Canvas className="ally-headings" style={{ margin: "0", }}>
 <h1>H1 Heading</h1>
@@ -70,10 +73,9 @@ arguably better for screenreader users, and for SEO.
 
 ## Paragraphs
 
-The `p` element represents a paragraph. Paragraphs are
-represented in visual media as blocks of text structured to
+Paragraphs are represented in visual media as blocks of text structured to
 group related content and separate them from adjacent blocks
-by blank lines and/or first-line indentation.
+by blank lines. The `p` element is used to create paragraph components.
 
 <Canvas style={{ margin: "0", }}>
 <p>This is a paragraph body text example.</p>
@@ -84,8 +86,10 @@ by blank lines and/or first-line indentation.
 
 ## Links
 
-The `a` element with its `href` attribute, create hyperlinks
-know as an Anchor link to web pages, files, email addresses,
+Links allow users to navigate to a different location. They can 
+be presented inline inside a paragraph or as standalone text.
+The `a` element with its `href` attribute, create hyperlink components
+know as an Anchor link which can lead to web pages, files, email addresses,
 locations etc in the same page, or anywhere else a URL can
 address. Content within each `a` should indicate the link's
 destination. Underline should only be used for text links
@@ -147,7 +151,7 @@ you should use the `Figure` Atom component for this purpose.
 
 Microcopy should be used to represent side comments and
 small print, such as copyright and legal text. The `small`
-element should be used in favour instead of simply a smaller
+element should be used instead of simply a smaller
 font size for it's semantic meaning.
 
 <Canvas style={{ margin: "0", }}>
@@ -185,8 +189,7 @@ system.
 <Canvas style={{ margin: "0", }}>
 <p>Examples of <i>idiomatic text</i> could include... 
 <br /> "She wondered, <i>What is this writer talking about, anyway?</i>" 
-<br /> or <br /> "The Latin phrase <i>Veni, vidi, vici</i> 
-is often mentioned in music, art, and literature."
+<br /> or <br /> "The Latin phrase <i lang="la">Veni, vidi, vici</i> is often mentioned in music, art, and literature."
 </p>
 </Canvas>
 
@@ -199,8 +202,7 @@ The `strong` element indicates that its contents has a
 strong importance, seriousness, or urgency.
 
 <Canvas style={{ margin: "0", }}>
-<p>An example of a sentence that could use the 
-<strong>strong</strong> element is... <br /> "before proceeding, 
+<p>An example of a sentence that could use the <strong>strong</strong> element is... <br /> "before proceeding, 
 <strong> make sure you put on your safety goggles</strong>."
 </p>
 </Canvas>
@@ -210,7 +212,8 @@ strong importance, seriousness, or urgency.
 
 ## Strikethrough
 Strikethrough text renders with a line through it to represent
-things that are no longer relevant or no longer accurate. 
+things that are no longer relevant or no longer accurate. Strikethrough
+text is created using the `s` element.
 However, this formatting is not appropriate when indicating document 
 edits, for edits use the Delete / Insert formatting as below.
 
@@ -222,12 +225,12 @@ edits, for edits use the Delete / Insert formatting as below.
 <div id="Delete" style={{ marginTop: "80px", }}></div>
 
 ## Delete / Insert
-Markup `del` and `ins`
 
 The deleted  element represents a range of text that has been deleted 
 from a document. This can be used when rendering track changes or source code 
 diff information, for example. The inserted element can be used for 
-the opposite purpose, to indicate text that has been added to the document.
+the opposite purpose, to indicate text that has been added to the document. 
+The `del` and `ins` elements should be used to create these components.
 
 <Canvas style={{ margin: "0", }}>
 <p>This is an example of <del>deleted</del> and <ins>inserted</ins> text copy.</p>
