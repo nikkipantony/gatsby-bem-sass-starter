@@ -285,7 +285,7 @@ if the source is a URL as in the below example.
 <Canvas style={{ margin: "0", }}>
 <figure>
 <blockquote cite="https://www.huxley.net/bnw/four.html">
-<p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+<p>"Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced."</p>
 </blockquote>
 <figcaption>— Aldous Huxley, <cite><a title="huxley.net/bnw/four" href="https://www.huxley.net/bnw/four.html" rel="noopener noreferrer" target="_blank">Brave New World</a></cite></figcaption>
 </figure>
@@ -296,12 +296,13 @@ if the source is a URL as in the below example.
 
 ## Inline Code
 
-Preformatted Text (Code Blocks)...
+Inline code is written inline with other text and is formatted using the `code` element to display its 
+contents styled in a fashion intended to indicate that the text is a short fragment of computer code. 
+This code content is displayed using the design systems monospace typeface with a darker background 
+than other paragraph text.
 
 <Canvas style={{ margin: "0", }}>
-    <div>
-        <p>x</p>
-    </div>
+<p>The function <code>selectAll()</code> highlights all the text in the input field.</p>
 </Canvas>
 
 
@@ -309,12 +310,14 @@ Preformatted Text (Code Blocks)...
 
 ## Code Block
 
-Preformatted Text (Code Blocks)...
+Preformatted text is used to display code within Code Blocks. The `pre` HTML5 element is used to represent the 
+preformatted text which is to be presented exactly as written. The text is rendered using the design systems 
+monospace typeface and is used wrapped around `code` elements to show the Code Block.
 
 <Canvas style={{ margin: "0", }}>
-    <div>
-        <p>x</p>
-    </div>
+<pre>
+<code>The is a preformatted code block</code>
+</pre>
 </Canvas>
 
 

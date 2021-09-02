@@ -18,11 +18,6 @@
 
 // Headings
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
-// The <h1> – <h6> elements represent six levels of section headings with <h1> being
-// the highest section level and <h6> is the lowest.
-// You should only use one <h1> per page. However, using more than one will not result
-// in an error, but using only one is seen as a best practice. Having a single top-level
-// title is also arguably better for screenreader users, and for SEO.
 h1,
 h2,
 h3,
@@ -72,8 +67,6 @@ h6 {
 
 // Paragraphs
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
-// The <p> element represents a paragraph. Paragraphs are represented in visual media as
-// blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.
 p {
     font-family: typeface(archivo);
     font-size: font-size(cm);
@@ -86,11 +79,6 @@ p {
 
 // Anchor Links
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
-// The <a> element with its href attribute, creates a hyperlink to web pages,
-// files, email addresses, locations in the same page, or anything else a URL can address.
-// Content within each <a> should indicate the link's destination.
-// While using the Ally Design System Starter Kit you should create links
-// either using the `InLink` for internal links or the `ExLink` for external links.
 a,
 a:link,
 a:visited {
@@ -111,9 +99,7 @@ a:visited {
 
 // Unordered and Ordered Lists
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
-// The <ul> element represents an unordered list of items, typically rendered as a bulleted list.
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
-// The <ol> element represents an ordered list of items — typically rendered as a numbered list.
 ul,
 ol {
     margin: spacing(xl) 0;
@@ -128,8 +114,6 @@ ol {
 
 // Figure Captions
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
-// The <figcaption> element represents a caption or legend describing
-// the rest of the contents of its parent <figure> element.
 figcaption {
     font-size: font-size(cs);
     font-weight: font-weight(bold);
@@ -142,8 +126,6 @@ figcaption {
 
 // Microcopy
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small
-// The <small> element represents side-comments and small print, like copyright and legal text,
-// independent of its styled presentation.
 small {
     font-size: font-size(cs);
     font-weight: font-weight(regular);
@@ -163,8 +145,6 @@ em {
 
 // Idiomatic Text
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
-// The <i> element represents a range of text that is set off from the normal text
-// for some reason, such as idiomatic text, technical terms or taxonomical designations.
 i {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
@@ -174,7 +154,6 @@ i {
 
 // Strong Importance
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
-// The <strong> element indicates that its contents has a strong importance, seriousness, or urgency.
 strong {
     font-weight: font-weight(bold);
     color: brand-color(midnight);
@@ -182,9 +161,6 @@ strong {
 
 // Strikethrough
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s
-// The <s> element renders text with a strikethrough, or a line through it. Use the <s> element to represent
-// things that are no longer relevant or no longer accurate. However, <s> is not appropriate when indicating
-// document edits; for that, use the <del> and <ins> elements, as appropriate.
 s {
     text-decoration: line-through;
 }
@@ -192,9 +168,6 @@ s {
 // Deleted / Inserted Text
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
-// The <del> element represents a range of text that has been deleted from a document. This can be used when rendering "track changes"
-// or source code diff information, for example.
-// The <ins> element can be used for the opposite purpose: to indicate text that has been added to the document.
 del,
 ins {
     text-decoration: line-through;
@@ -211,10 +184,8 @@ ins {
 
 // Highlighting
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
-// The <mark> element represents text which is marked or highlighted for reference or notation purposes,
-// due to the marked passage's relevance or importance in the enclosing context.
-// Accessibility Concerns
 // https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible
+// Accessibility Concerns
 // The presence of the mark element is not announced by most screen reading technology in its default configuration.
 // It can be made to be announced using a span with the .sr-only class at the start and end of the highlighted text.
 // ie: <mark><span className="sr-only"> [highlight starts] </span> Highlighed Text <span className="sr-only"> [highlight ends] </span><mark>
@@ -225,9 +196,6 @@ mark {
 
 // Quotation
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q
-// The <q> element indicates that the enclosed text is a short inline quotation.
-// Most modern browsers implement this by surrounding the text in quotation marks and
-// a URL for the source of the quotation may be given using the cite attribute.
 q {
     font-style: italic;
     color: brand-color(midnight);
@@ -242,10 +210,6 @@ q {
 
 // Block Quotations
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
-// The <blockquote> element indicates that the enclosed text is an extended quotation.
-// Usually, this is rendered visually by indentation and a URL for the source of the quotation
-// may be given using the cite attribute, while a text representation of the source can be given
-// using the <cite> element.
 blockquote {
     margin: spacing(xxxl) 0 spacing(l);
     width: 100%;
@@ -285,17 +249,43 @@ figure > figcaption > cite > a:active {
 
 // Citations
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
-// The <cite> element is used to describe a reference to a cited creative work, and must include
-// the title of that work. The reference may be in an abbreviated form according to context-appropriate
-// conventions related to citation metadata.
 cite,
 cite a {
     font-style: italic;
 }
 
+// Inline Code
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code
+code {
+    color: brand-color(snow);
+    font-size: font-size(cs);
+    font-weight: font-weight(bold);
+    background-color: brand-color(midnight);
+    border-radius: radius(rounded);
+    font-family: typeface(mono);
+    white-space: nowrap;
+    line-height: leading(regular);
+    margin: 0 spacing(xxxs);
+    padding: spacing(xxxs) 4px;
+    border: 0;
+}
+
+// Preformatted Text (Code Blocks)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
+pre {
+    display: block;
+    color: brand-color(snow);
+    font-size: font-size(cs);
+    font-weight: font-weight(bold);
+    background-color: brand-color(midnight);
+    border-radius: radius(square);
+    font-family: typeface(mono);
+    padding: spacing(s);
+    margin: 0 0 spacing(xl);
+}
+
 // Abbreviations
-// The <abbr> element represents an abbreviation or acronym; the title attribute provides an expansion or
-// description for the abbreviation. If present, the title must contain the full description and nothing else.
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
 abbr {
     font-style: italic;
     text-decoration: none;
@@ -305,45 +295,11 @@ abbr {
 
 // Definitions
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn
-// The <dfn> element is used to indicate the term being defined within the context of a definition phrase or sentence.
-// The <p> element, the <dt>/<dd> pairing, or the <section> element which is the nearest ancestor of the <dfn> is
-// considered to be the definition of the term.
 dfn {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
     color: brand-color(midnight);
-}
-
-// Inline Code
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code
-// The <code> element displays its contents styled in a fashion intended to indicate that the text is a short fragment of
-// computer code. By default, the content text is displayed using the user agent's default monospace font.
-code {
-    color: brand-color(snow);
-    font-size: font-size(cs);
-    font-weight: font-weight(bold);
-    background-color: brand-color(midnight);
-    border-radius: radius(square);
-    font-family: typeface(mono);
-}
-
-// Preformatted Text (Code Blocks)
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
-// The <pre> element represents preformatted text which is to be presented exactly as written in the HTML file.
-// The text is typically rendered using monospace font and is used wrapped around <code> to show a code block.
-pre {
-    display: block;
-    color: brand-color(snow);
-    font-size: font-size(cm);
-    font-weight: font-weight(
-        bold
-    ) !important; // Important so it overrides Storybook styling
-    background-color: brand-color(midnight);
-    border-radius: radius(square);
-    font-family: typeface(mono);
-    padding: spacing(s);
-    margin: 0 0 spacing(xl);
 }
 
 // Time
