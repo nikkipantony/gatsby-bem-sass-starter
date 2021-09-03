@@ -1,6 +1,6 @@
 import { Meta, Canvas } from '@storybook/addon-docs';
 
-<Meta title="Foundations/Typography" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
+<Meta title="Foundations/Typography Guidelines" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
 
 # Typography Guidelines
 
@@ -22,6 +22,7 @@ to create a higher level of accessibility for products built with this system.
     <li><a href="#Emphasis">Emphasis</a></li>
     <li><a href="#Idiomatic">Idiomatic Text</a></li>
     <li><a href="#Strong">Strong Importance</a></li>
+    <li><a href="#Attention">Bring Attention</a></li>
     <li><a href="#Highlighting">Highlighting</a></li>
     <li><a href="#Abb">Abbreviation</a></li>
     <li><a href="#Def">Definitions</a></li>
@@ -41,6 +42,8 @@ to create a higher level of accessibility for products built with this system.
     <li><a href="#Sample">Sample Output</a></li>
     <li><a href="#Variable">Variable</a></li>
     <li><a href="#key">Keyboard Input</a></li>
+    <li><a href="#Sup">Superscript</a></li>
+    <li><a href="#Sub">Subscript</a></li>
     <li><a href="#Break">Thematic Break</a></li>
 </ul>
 </nav>
@@ -168,6 +171,17 @@ strong importance, seriousness, or urgency.
 </Canvas>
 
 
+<div id="Attention" style={{ marginTop: "80px", }}></div>
+
+## Bring Attention
+
+X
+
+<Canvas style={{ margin: "0", }}>
+X
+</Canvas>
+
+
 <div id="Highlighting" style={{ marginTop: "80px", }}></div>
 
 ## Highlighting
@@ -219,12 +233,15 @@ to be the definition of the term.
 
 ## Unarticulated Annotation
 
-X
+Unarticulated annotation is inline text which should be rendered in a way that indicates that 
+it has a non-textual annotation. The `u` element is used to represent unarticulated annotation
+which used to be called the "Underline" element in older versions of HTML, and is still sometimes 
+misused in this way. To underline text, you should instead apply a style that includes the 
+CSS text-decoration property set to underline. The `u` element should not be used to underline 
+text for presentation purposes, or to denote titles of books.
 
 <Canvas style={{ margin: "0", }}>
-    <div>
-        <p>x</p>
-    </div>
+<p>You could use unarticulated annotation formatting to highlight <u>speling</u> mistakes.</p>
 </Canvas>
 
 
@@ -420,6 +437,32 @@ X
 <div id="key" style={{ marginTop: "80px", }}></div>
 
 ## Keyboard Input
+
+X
+
+<Canvas style={{ margin: "0", }}>
+    <div>
+        <p>x</p>
+    </div>
+</Canvas>
+
+
+<div id="Sup" style={{ marginTop: "80px", }}></div>
+
+## Superscript
+
+X
+
+<Canvas style={{ margin: "0", }}>
+    <div>
+        <p>x</p>
+    </div>
+</Canvas>
+
+
+<div id="Sub" style={{ marginTop: "80px", }}></div>
+
+## Subscript
 
 X
 

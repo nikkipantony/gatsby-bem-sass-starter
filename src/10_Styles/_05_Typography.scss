@@ -134,6 +134,9 @@ strong {
     color: brand-color(midnight);
 }
 
+// Bring Attention
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
+
 // Highlighting
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
 // https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible
@@ -394,6 +397,12 @@ kbd {
     padding: spacing(xxxs) spacing(xxs);
     white-space: nowrap;
 }
+
+// Superscript
+//
+
+// Subscript
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
 
 // Thematic Break (Horizontal Rule)
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr
