@@ -220,8 +220,6 @@ ol {
 
 // Time
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time
-// The <time> element represents a specific period in time. It may include the datetime attribute to translate dates into
-// machine-readable format, allowing for better search engine results or custom features such as reminders.
 time {
     font-family: typeface(archivo);
     font-size: font-size(cm);
@@ -233,18 +231,9 @@ time {
 
 // Address
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address
-// The <address> element indicates that the enclosed HTML provides contact information for a person or people,
-// or for an organization. It may include any type of contact information that is needed, such as a physical address, URL,
-// email address, phone number, social media handle, geographic coordinates, and so forth.
-// It used to be the case that an <address> element was only supposed to be used to represent the contact information of the
-// document's author, however, its definition has since been updated so it can now be used to mark up arbitrary addresses.
 address {
     font-style: italic;
     padding-bottom: spacing(l);
-
-    p {
-        padding-bottom: spacing(xxs);
-    }
 }
 
 // Figure Captions

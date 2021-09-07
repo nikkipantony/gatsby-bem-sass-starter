@@ -37,7 +37,7 @@ a component should be built instead with the BEM naming convention used.
 <ul style={{ marginTop: "20px", paddingLeft: "20px",  }}>
     <li><a href="#Lists">Lists</a></li>
     <li><a href="#Time">Time and Dates</a></li>
-    <li><a href="#Address">Address</a></li>
+    <li><a href="#Address">Contact Details</a></li>
     <li><a href="#FigureCaptions">Figure Captions</a></li>
     <li><a href="#Quotation">Inline Quotation</a></li>
     <li><a href="#BlockQuotation">Block Quotation</a></li>
@@ -342,15 +342,28 @@ element can be used to render a specific time using the 24-hour clock, a date us
 
 <div id="Address" style={{ marginTop: "80px", }}></div>
 
-## Address
+## Contact Details
 
-X
+The `<address>` element indicates that the enclosed information provides contact information for a person or people,
+or for an organization. It may include any type of contact information that is needed, such as a physical address, URL,
+email address, phone number, social media handle, geographic coordinates, and so forth.
+It used to be the case that an `<address>` element was only supposed to be used to represent the contact information of the
+document's author, however, its definition has since been updated so it can now be used to mark up arbitrary addresses.
+When creating contact sections you are likely to want to create a seperate component for this so to use external links
+and also to possibly add icons or other further styling, but the below example is still the basic typography markup you will need to use.
 
 ### Coded Example 
 <Canvas style={{ margin: "0", }}>
-    <div>
-        <p>x</p>
-    </div>
+<div>
+<h4>Contact me</h4>
+<address>
+<p>
+Email: <a href="mailto:me@me.com">me@me.com</a><br />
+SMS: <a href="sms:+447123456789">+447123456789</a><br />
+Post: <a href="https://goo.gl/maps/xAu6oKPiDXxivzt46">Buckingham Palace, London, SW1A 1AA.</a>
+</p>
+</address>
+</div>
 </Canvas>
 
 
