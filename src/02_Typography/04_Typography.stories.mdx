@@ -55,10 +55,10 @@ to create a higher level of accessibility for products built with this system.
 ## Headings
 
 Headings are typography components used to create various 
-levels of hierarchies between text. The `h1` to `h6` elements 
+levels of hierarchies between text. The `<h1>` to `<h6>` elements 
 represent the six levels of section and/or page headings with 
-`h1` being at the highest hierarchical level and `h6` being at 
-the lowest. You should only use one `h1` per page. However, 
+`<h1>` being at the highest hierarchical level and `<h6>` being at 
+the lowest. You should only use one `<h1>` per page. However, 
 using more than one will not result in an error, but using only 
 one is seen as best practice. Having a single top-level title is 
 also arguably better for screenreader users, and for SEO.
@@ -79,7 +79,7 @@ also arguably better for screenreader users, and for SEO.
 
 Paragraphs are represented in visual media as blocks of text structured to
 group related content and separate them from adjacent blocks
-by blank lines. The `p` element is used to create paragraph components.
+by blank lines. The `<p>` element is used to create paragraph components.
 
 <Canvas style={{ margin: "0", }}>
 <p>This is a paragraph body text example.</p>
@@ -92,15 +92,15 @@ by blank lines. The `p` element is used to create paragraph components.
 
 Links allow users to navigate to a different location. They can 
 be presented inline inside a paragraph or as standalone text.
-The `a` element with its `href` attribute, create hyperlink components
+The `<a>` element with its `<href>` attribute, create hyperlink components
 know as an Anchor link which can lead to web pages, files, email addresses,
 locations, phone numbers and sms etc in the same page, or anywhere else a URL can
-address. Content within each `a` should indicate the link's
+address. Content within each `<a>` should indicate the link's
 destination. Underline should only be used for text links
 and should never be used as a mechanism for adding emphasis.
-While using this design system you should use the `ExLink`
-Atom component for external links, the `NavLink` component
-for navigation and the `SkipLink` to skip to main content to
+While using this design system you should use the `<ExLink>`
+Atom component for external links, the `<NavLink>` component
+for navigation and the `<SkipLink>` to skip to main content to
 help improve accessibility.
 
 <Canvas style={{ margin: "0", }}>
@@ -113,7 +113,7 @@ help improve accessibility.
 ## Microcopy
 
 Microcopy should be used to represent side comments and
-small print, such as copyright and legal text. The `small`
+small print, such as copyright and legal text. The `<small>`
 element should be used instead of simply a smaller
 font size for it's semantic meaning.
 
@@ -129,7 +129,7 @@ font size for it's semantic meaning.
 Emphasis in typography is the strengthening of words in text
 with the font of those words in a different style from the
 rest of the text. It is the equivalent of prosody stress in
-speech. The `em` element is used to highlight emphasis and
+speech. The `<em>` element is used to highlight emphasis and
 can affect the meaning of the sentence itself.
 
 <Canvas style={{ margin: "0", }}>
@@ -144,8 +144,8 @@ can affect the meaning of the sentence itself.
 Idiomatic text is a range of text with different semantic
 meaning than the surrounding text such as a technical terms,
 taxonomical designations, thoughts or words from another
-language (which should include the `lang` attribute to
-identify the language). The `i` element should be used to
+language (which should include the `<lang>` attribute to
+identify the language). The `<i>` element should be used to
 represent this text to help convey meaning when using this
 system.
 
@@ -161,7 +161,7 @@ system.
 
 ## Strong Importance
 
-The `strong` element indicates that its contents has a
+The `<strong>` element indicates that its contents has a
 strong importance, seriousness, or urgency.
 
 <Canvas style={{ margin: "0", }}>
@@ -176,7 +176,7 @@ strong importance, seriousness, or urgency.
 ## Bring Attention
 
 To draw the reader's attention to text content, which is not otherwise granted 
-special importance to `b` element should be used which gives the text a heavier 
+special importance to `<b>` element should be used which gives the text a heavier 
 weight than the standard paragraph styling. You can use this styling for cases 
 such as for keywords in a summary or product names in a review.
 
@@ -189,10 +189,10 @@ such as for keywords in a summary or product names in a review.
 
 ## Highlighting
 
-Highlight formatting is used for reference or notation purposes. The `mark` element is 
-used to represent text which is marked or highlighted. The presence of the `mark` element 
+Highlight formatting is used for reference or notation purposes. The `<mark>` element is 
+used to represent text which is marked or highlighted. The presence of the `<mark>` element 
 is not announced by most screen reading technology in its default configuration therefore 
-for accessibility it should be announced using a span with the `.sr-only` class at the 
+for accessibility it should be announced using a span with the `<.sr-only>` class at the 
 start and end of the highlighted text as in the example shown below.
 
 <Canvas style={{ margin: "0", }}>
@@ -208,9 +208,9 @@ start and end of the highlighted text as in the example shown below.
 
 ## Abbreviation
 
-For abbreviations the `abbr` HTML element is used to represent an abbreviation or acronym. 
-The `title` attribute is then used to provide an expansion or description for the abbreviation 
-and when the user hovers over the text the description is shown. The `title` must only contain 
+For abbreviations the `<abbr>` HTML element is used to represent an abbreviation or acronym. 
+The `<title>` attribute is then used to provide an expansion or description for the abbreviation 
+and when the user hovers over the text the description is shown. The `<title>` must only contain 
 the description and nothing else.
 
 <Canvas style={{ margin: "0", }}>
@@ -223,8 +223,8 @@ the description and nothing else.
 ## Definitions
 
 When showing definitions they should be styled differently to the other text.
-The `dfn` element is used to indicate the term being defined within the context of a definition 
-phrase or sentence and the `p` element which is the nearest ancestor of the `dfn` is considered 
+The `<dfn>` element is used to indicate the term being defined within the context of a definition 
+phrase or sentence and the `<p>` element which is the nearest ancestor of the `<dfn>` is considered 
 to be the definition of the term.
 
 <Canvas style={{ margin: "0", }}>
@@ -237,10 +237,10 @@ to be the definition of the term.
 ## Unarticulated Annotation
 
 Unarticulated annotation is inline text which should be rendered in a way that indicates that 
-it has a non-textual annotation. The `u` element is used to represent unarticulated annotation
+it has a non-textual annotation. The `<u>` element is used to represent unarticulated annotation
 which used to be called the "Underline" element in older versions of HTML, and is still sometimes 
 misused in this way. To underline text, you should instead apply a style that includes the 
-CSS text-decoration property set to underline. The `u` element should not be used to underline 
+CSS text-decoration property set to underline. The `<u>` element should not be used to underline 
 text for presentation purposes, or to denote titles of books.
 
 <Canvas style={{ margin: "0", }}>
@@ -253,7 +253,7 @@ text for presentation purposes, or to denote titles of books.
 ## Strikethrough
 Strikethrough text renders with a line through it to represent
 things that are no longer relevant or no longer accurate. Strikethrough
-text is created using the `s` element.
+text is created using the `<s>` element.
 However, this formatting is not appropriate when indicating document 
 edits, for edits use the Delete / Insert formatting as below.
 
@@ -270,7 +270,7 @@ The deleted  element represents a range of text that has been deleted
 from a document. This can be used when rendering track changes or source code 
 diff information, for example. The inserted element can be used for 
 the opposite purpose, to indicate text that has been added to the document. 
-The `del` and `ins` elements should be used to create these components.
+The `<del>` and `<ins>` elements should be used to create these components.
 
 <Canvas style={{ margin: "0", }}>
 <p>This is an example of <del>deleted</del> and <ins>inserted</ins> text copy.</p>
@@ -281,8 +281,8 @@ The `del` and `ins` elements should be used to create these components.
 
 ## Lists
 
-The `ul` element represents an unordered list of items,
-rendered as a bulleted list while the `ol` element
+The `<ul>` element represents an unordered list of items,
+rendered as a bulleted list while the `<ol>` element
 represents an ordered list of items renders as a numbered
 list. Lists should either be part of a section with other
 text for context or have a section heading.
@@ -333,10 +333,10 @@ X
 
 ## Figure Captions
 
-The `figcaption` element represents a caption or legend
-describing the rest of the content of its parent `figure`
+The `<figcaption>` element represents a caption or legend
+describing the rest of the content of its parent `<figure>`
 element such as for an image. When using this design system
-you should use the `Figure` Atom component for this purpose.
+you should use the `<Figure>` Atom component for this purpose.
 
 <Canvas style={{ margin: "0", }}>
 <figure>
@@ -350,10 +350,10 @@ you should use the `Figure` Atom component for this purpose.
 
 ## Inline Quotation
 
-For inline quotation within a paragraph the `q` element should be used to indicate 
+For inline quotation within a paragraph the `<q>` element should be used to indicate 
 that the enclosed text is a short inline quotation. Most modern web browsers implement 
 this by surrounding the text in quotation marks and a URL for the source of the quotation 
-may be given using the `cite` attribute and as an external link as in the below example.
+may be given using the `<cite>` attribute and as an external link as in the below example.
 
 <Canvas style={{ margin: "0", }}>
 <p>When Dave asks HAL to open the pod bay doors, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921"><a title="imdb.com" href="https://www.imdb.com/title/tt0062622/quotes/qt0396921" rel="noopener noreferrer" target="_blank">I'm sorry, Dave. I'm afraid I can't do that.</a></q></p>
@@ -365,10 +365,10 @@ may be given using the `cite` attribute and as an external link as in the below 
 ## Block Quotation
 
 For longer quotations a quotation block component should be used with 
-the `blockquote` element which indicates that the enclosed text is an extended quotation.
+the `<blockquote>` element which indicates that the enclosed text is an extended quotation.
 Usually, this is rendered visually by indentation and a URL for the source of the quotation
-may be given using the `cite` attribute, while a text representation of the source can 
-be given using the `cite` element. An external link to the cited source may also be given 
+may be given using the `<cite>` attribute, while a text representation of the source can 
+be given using the `<cite>` element. An external link to the cited source may also be given 
 if the source is a URL as in the below example.
 
 <Canvas style={{ margin: "0", }}>
@@ -385,7 +385,7 @@ if the source is a URL as in the below example.
 
 ## Inline Code
 
-Inline code is written inline with other text and is formatted using the `code` element to display its 
+Inline code is written inline with other text and is formatted using the `<code>` element to display its 
 contents styled in a fashion intended to indicate that the text is a short fragment of computer code. 
 This code content is displayed using the design systems monospace typeface with a darker background 
 than other paragraph text.
@@ -399,12 +399,12 @@ than other paragraph text.
 
 ## Code Block
 
-Preformatted text is used to display code within Code Blocks. The `pre` HTML5 element is used to represent the 
+Preformatted text is used to display code within Code Blocks. The `<pre>` HTML5 element is used to represent the 
 preformatted text which is to be presented exactly as written. The text is rendered using the design systems 
-monospace typeface and is used wrapped around `code` elements to show the Code Block.
+monospace typeface and is used wrapped around `<code>` elements to show the Code Block.
 
 <!-- Note: 
-`pre` element does not work within <Canvas> so the example code wraps 
+`<pre>` element does not work within <Canvas> so the example code wraps 
 -->
 <Canvas style={{ margin: "0", }}>
 <pre>
