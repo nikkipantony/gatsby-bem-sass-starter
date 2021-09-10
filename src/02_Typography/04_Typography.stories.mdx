@@ -1,0 +1,577 @@
+import { Meta, Canvas } from '@storybook/addon-docs';
+
+<Meta title="Typography/Typography Guidelines" parameters={{ previewTabs: { canvas: { hidden: true } } }} />
+
+# Typography Guidelines
+
+These guidelines visually present the formatting decisions made
+using this design system's typography design tokens. This guide shows 
+examples of the correct use of HTML5 semantic markup to be used as well 
+as styling for consistency to create a higher level of accessibility for 
+products built with this system. It should also be noted that no classes 
+are applied to elements to render this styling, the styling 
+is applied directly to the elements to maintain consistency. In 
+circumstances when a class is needed, a component should be built instead 
+using the BEM naming convention.
+
+<div style={{ width: "100%", boxShadow: "rgb(0 0 0 / 10%) 0 4px 6px 0", border: "2px solid rgba(0, 0, 13, 1)", borderRadius: "4px", padding: "30px", marginTop: "20px", }}>
+
+## Contents
+
+<nav style={{ display: "flex", flexFlow: "row", flexWrap: "wrap", maxWidth: "500px", justifyContent: "space-between", }}>
+<ul style={{ marginTop: "20px", paddingLeft: "20px", }}>
+    <li><a href="#Headings">Headings</a></li>
+    <li><a href="#Paragraphs">Paragraphs</a></li>
+    <li><a href="#Links">Links</a></li>
+    <li><a href="#Microcopy">Microcopy</a></li>
+    <li><a href="#Emphasis">Emphasis</a></li>
+    <li><a href="#Idiomatic">Idiomatic Text</a></li>
+    <li><a href="#Strong">Strong Importance</a></li>
+    <li><a href="#Attention">Bring Attention</a></li>
+    <li><a href="#Highlighting">Highlighting</a></li>
+    <li><a href="#Abb">Abbreviation</a></li>
+    <li><a href="#Def">Definitions</a></li>
+    <li><a href="#U">Unarticulated Annotation</a></li>
+    <li><a href="#Strike">Strikethrough</a></li>
+    <li><a href="#Delete">Delete / Insert</a></li>
+</ul>
+<ul style={{ marginTop: "20px", paddingLeft: "20px",  }}>
+    <li><a href="#Lists">Lists</a></li>
+    <li><a href="#Time">Time and Dates</a></li>
+    <li><a href="#Address">Contact Details</a></li>
+    <li><a href="#FigureCaptions">Figure Captions</a></li>
+    <li><a href="#Quotation">Inline Quotation</a></li>
+    <li><a href="#BlockQuotation">Block Quotation</a></li>
+    <li><a href="#Code">Inline Code</a></li>
+    <li><a href="#BlockCode">Code Block</a></li>
+    <li><a href="#Sample">Sample Output</a></li>
+    <li><a href="#Variable">Variable</a></li>
+    <li><a href="#Sup">Superscript</a></li>
+    <li><a href="#Sub">Subscript</a></li>
+    <li><a href="#key">Keyboard Input</a></li>
+    <li><a href="#Break">Thematic Break</a></li>
+</ul>
+</nav>
+
+</div>
+
+<div id="Headings" style={{ marginTop: "80px", }}></div>
+
+## Headings
+
+Headings are typography components used to create hierarchies 
+within text. The `<h1>` to `<h6>` elements are used to represent 
+the six levels of section and/or page headings with `<h1>` being at 
+the highest hierarchical level and `<h6>` being the lowest. You 
+should only use one `<h1>` per page. However, using more than one 
+will not result in an error, but using only one is seen as best 
+practice. Having a single top-level title is also arguably better 
+for screenreader users, and for SEO.
+
+### Coded Example
+<Canvas className="ally-headings" style={{ margin: "0", }}>
+<h1>H1 Heading</h1>
+<h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+<h6>H6 Heading</h6>
+</Canvas>
+
+
+<div id="Paragraphs" style={{ marginTop: "80px", }}></div>
+
+## Paragraphs
+
+Paragraphs are represented in visual media as blocks of text 
+structured to group related text content and separate them from 
+adjacent blocks using white space (blank lines). The `<p>` element 
+is used to create paragraph components.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>This is a paragraph body text example.</p>
+</Canvas>
+
+
+<div id="Links" style={{ marginTop: "80px", }}></div>
+
+## Links
+
+Links allow users to navigate to a different location. They can 
+be presented inline inside a paragraph or as standalone text.
+The `<a>` element along with its `<href>` attribute are used 
+to create hyperlink components know as an anchor link which can 
+lead to web pages, files, email addresses, locations, phone number, 
+etc. in the same page, or anywhere else a URL can address. 
+Content within each `<a>` element should indicate the link's
+destination. Underline should only be used for text links
+and should never be used as a mechanism for adding emphasis.
+While using this design system you should use the `<ExLink>`
+atom component for external links, the `<NavLink>` component
+for navigation, and the `<SkipLink>` to skip to main content to
+help improve accessibility.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>This is an <a href="#">anchor link</a> example.</p>
+</Canvas>
+
+
+<div id="Microcopy" style={{ marginTop: "80px", }}></div>
+
+## Microcopy
+
+Microcopy should be used to represent side comments and 
+small print, such as copyright and legal text. The `<small>` 
+element should be used instead of simply applying a smaller 
+font size through styling for its semantic meaning.
+
+### Coded Example
+<Canvas style={{ margin: "0", }}>
+<p><small>Microcopy text example.</small></p>
+</Canvas>
+
+
+<div id="Emphasis" style={{ marginTop: "80px", }}></div>
+
+## Emphasis
+
+Emphasis in typography is the strengthening of words in text 
+with the font of those words in a different style from the 
+rest to convey stressed emphasis. The `<em>` element is used 
+to highlight emphasis and can affect the meaning of the 
+sentence itself.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>This is an example of <em>emphasis</em> in text copy.</p>
+</Canvas>
+
+
+<div id="Idiomatic" style={{ marginTop: "80px", }}></div>
+
+## Idiomatic Text
+
+Idiomatic text is a range of text with different semantic
+meaning than the surrounding text such as for technical terms, 
+taxonomical designations, thoughts or words from another
+language (which should include the `<lang>` attribute to
+identify the language). The `<i>` element should be used to
+represent this text to help convey meaning when using this
+system.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>Examples of <i>idiomatic text</i> could include... 
+<br /> "She wondered, <i>What is this writer talking about, anyway?</i>" 
+<br /> or <br /> "The Latin phrase <i lang="la">Veni, vidi, vici</i> is often mentioned in music, art, and literature."
+</p>
+</Canvas>
+
+
+<div id="Strong" style={{ marginTop: "80px", }}></div>
+
+## Strong Importance
+
+The `<strong>` element indicates that its contents has a
+strong importance, seriousness, or urgency.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>An example of a sentence that could use the <strong>strong</strong> element is... <br /> "before proceeding, 
+<strong> make sure you put on your safety goggles</strong>."
+</p>
+</Canvas>
+
+
+<div id="Attention" style={{ marginTop: "80px", }}></div>
+
+## Bring Attention
+
+To draw the reader's attention to text content, which is not otherwise granted 
+special importance, the `<b>` element should be used which gives the text a heavier 
+weight than the standard paragraph styling. You can use this styling for cases 
+such as for keywords in a summary or product names in a review.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>The two most popular science courses offered by the school are <b>chemistry</b> (the study of chemicals and the composition of substances) and <b>physics</b> (the study of the nature and properties of matter and energy).</p>
+</Canvas>
+
+
+<div id="Highlighting" style={{ marginTop: "80px", }}></div>
+
+## Highlighting
+
+Highlight formatting is used for reference or notation purposes. 
+The `<mark>` element is used to represent text which is marked or highlighted. 
+The presence of the `<mark>` element is not announced by most 
+screen reading technology in its default configuration, therefore, for accessibility 
+it should be announced using a span with the `<.sr-only>` class. 
+This span should be placed at both the start and end of the highlighted text as 
+in the example shown below so that the text is not shown visually 
+but is still made readable to screen readers.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>
+<mark>
+<span className="sr-only"> [highlight starts] </span> This is highlighed text <span className="sr-only"> [highlight ends] </span>
+</mark>
+</p>
+</Canvas>
+
+
+<div id="Abb" style={{ marginTop: "80px", }}></div>
+
+## Abbreviation
+
+For abbreviations the `<abbr>` element is used to represent an abbreviation 
+or acronym. The `<title>` attribute is then used to provide an expansion or 
+description for the abbreviation, so that when the user hovers over the text, the 
+description is shown. The `<title>` must only contain the description and nothing else.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> to style your <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+</Canvas>
+
+
+<div id="Def" style={{ marginTop: "80px", }}></div>
+
+## Definitions
+
+When showing definitions they should be styled differently to the other text.
+The `<dfn>` element is used to indicate the term being defined within the 
+context of a definition phrase or sentence, and the `<p>` element which is the 
+nearest ancestor of the `<dfn>` is considered to be the definition of the term.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>The HTML Definition element `<dfn>&lt;dfn&gt;</dfn>` is used to indicate the 
+term being defined.</p>
+</Canvas>
+
+
+<div id="U" style={{ marginTop: "80px", }}></div>
+
+## Unarticulated Annotation
+
+Unarticulated annotation is inline text which should be rendered in a way that 
+indicates that it has a non-textual annotation. The `<u>` element is used to 
+represent unarticulated annotation which used to be called the underline element 
+in older versions of HTML, and is still sometimes misused in this way. To 
+underline text, you should instead apply a style that includes the CSS text-decoration 
+property set to underline. The `<u>` element should not be used to underline 
+text for presentation purposes.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>You could use unarticulated annotation formatting to highlight <u>speling</u> mistakes.</p>
+</Canvas>
+
+
+<div id="Strike" style={{ marginTop: "80px", }}></div>
+
+## Strikethrough
+Strikethrough text renders with a line through it to represent
+things that are no longer relevant or no longer accurate. Strikethrough
+text is created using the `<s>` element.
+However, this formatting is not appropriate when indicating document 
+edits, for edits use the Delete / Insert formatting as below.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>This is an example of <s>strikethrough</s> text copy.</p>
+</Canvas>
+
+
+<div id="Delete" style={{ marginTop: "80px", }}></div>
+
+## Delete / Insert
+
+The deleted element represents a range of text that has been deleted 
+from a document. This can be used when rendering track changes or source code 
+diff information, for example. The inserted element can be used for 
+the opposite purpose to indicate text that has been added to the document. 
+The `<del>` and `<ins>` elements should be used to create these components.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>This is an example of <del>deleted</del> and <ins>inserted</ins> text copy.</p>
+</Canvas>
+
+
+<div id="Lists" style={{ marginTop: "80px", }}></div>
+
+## Lists
+
+The `<ul>` element represents an unordered list of items,
+rendered as a bulleted list while the `<ol>` element
+represents an ordered list of items renders as a numbered
+list. Lists should either be part of a section with other
+text for context or have a section heading. Lists should 
+not contain any other direct sibling elements other than 
+the `<li>` element.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<ul>
+<li>This is an unordered list example</li>
+<li>List items that are not in an order</li>
+<li>It is just a list of items</li>
+</ul>
+<ol>
+<li>This is an example of an ordered list</li>
+<li>Items have a hierarchy</li>
+<li>Items are shown with a number</li>
+</ol>
+</Canvas>
+
+
+<div id="Time" style={{ marginTop: "80px", }}></div>
+
+## Time and Dates
+
+When representing a specific period in time, the `<time>` element should be used so 
+that it is styled differently to stand out from the rest of the text and also 
+to make the data machine readable. This allows for better search engine 
+results and for possible custom features such as reminders. The `<time>` element 
+can be used to render a specific time using the 24-hour clock, a date using 
+the Gregorian calendar (with optional time and timezone information), or 
+a time duration. 
+
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>
+  The last meeting was on <time datetime="2020-07-07">7 July '20</time>.
+<br />The next meeting starts at <time datetime="20:00">8pm</time> on <time datetime="2022-07-01">7 July '22</time> and will last <time datetime="PT2H30M">2 and a half hours</time>.
+</p>
+</Canvas>
+
+
+<div id="Address" style={{ marginTop: "80px", }}></div>
+
+## Contact Details
+
+The `<address>` element indicates that the enclosed information provides 
+contact information for a person or people, or for an organization. 
+It may include any type of contact information that is needed, such as 
+a physical address, URL, email address, phone number, social media handle, 
+geographic coordinates, and so forth. It used to be the case that 
+an `<address>` element was only supposed to be used to represent the contact 
+information of the document's author, however, its definition has since 
+been updated so it can now be used to mark up arbitrary addresses. When 
+creating contact sections you are likely to want to create a separate 
+component in order to use external links and also to possibly add icons 
+or other further styling, but the below example is still the basic typography 
+markup you will need to use.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<div>
+<h4>Contact me</h4>
+<address>
+<p>
+Email: <a href="mailto:me@me.com">me@me.com</a><br />
+SMS: <a href="sms:+447123456789">+447123456789</a><br />
+Post: <a href="https://goo.gl/maps/xAu6oKPiDXxivzt46">Buckingham Palace, London, SW1A 1AA.</a>
+</p>
+</address>
+</div>
+</Canvas>
+
+
+<div id="FigureCaptions" style={{ marginTop: "80px", }}></div>
+
+## Figure Captions
+
+The `<figcaption>` element represents a caption or legend
+describing the rest of the content of its parent `<figure>`
+element such as for an image. When using this design system
+you should use the `<Figure>` atom component for this purpose, 
+but the below example is still the same markup you will need.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<figure>
+<img src="https://via.placeholder.com/300x200.png/FFD700/000013?text=Figure+Placeholder" alt="figure placeholder with yellow background color" />
+<figcaption>Example figure caption.</figcaption>
+</figure>
+</Canvas>
+
+
+<div id="Quotation" style={{ marginTop: "80px", }}></div>
+
+## Inline Quotation
+
+For inline quotation within a paragraph the `<q>` element should be 
+used to indicate that the enclosed text is a short inline quotation. 
+Most modern web browsers implement this by surrounding the text in 
+quotation marks and a URL for the source of the quotation may be given 
+using the `<cite>` attribute and as an external link as in the below example.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>When Dave asks HAL to open the pod bay doors, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921"><a title="imdb.com" href="https://www.imdb.com/title/tt0062622/quotes/qt0396921" rel="noopener noreferrer" target="_blank">I'm sorry, Dave. I'm afraid I can't do that.</a></q></p>
+</Canvas>
+
+
+<div id="BlockQuotation" style={{ marginTop: "80px", }}></div>
+
+## Block Quotation
+
+For longer quotations a quotation block component should be used with 
+the `<blockquote>` element which indicates that the enclosed text is 
+an extended quotation. Usually, this is rendered visually by indentation. 
+A URL for the source of the quotation may be given using the `<cite>` 
+attribute, while a text representation of the source can be given using 
+the `<cite>` element. An external link to the cited source may also be 
+given if the source is a URL as in the below example.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<figure>
+<blockquote cite="https://www.huxley.net/bnw/four.html">
+<p>"Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced."</p>
+</blockquote>
+<figcaption>— Aldous Huxley, <cite><a title="huxley.net/bnw/four" href="https://www.huxley.net/bnw/four.html" rel="noopener noreferrer" target="_blank">Brave New World</a></cite></figcaption>
+</figure>
+</Canvas>
+
+
+<div id="Code" style={{ marginTop: "80px", }}></div>
+
+## Inline Code
+
+Inline code is written inline with other text and is formatted using 
+the `<code>` element to display its contents styled in a fashion intended 
+to indicate that the text is a short fragment of computer code. This code 
+content is displayed using the design system's monospace typeface with a 
+darker background than other paragraph text.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>The function <code>selectAll()</code> highlights all the text in the input field.</p>
+</Canvas>
+
+
+<div id="BlockCode" style={{ marginTop: "80px", }}></div>
+
+## Code Block
+
+Preformatted text is used to display code within code blocks. 
+The `<pre>` element is used to represent the preformatted text which 
+is to be presented exactly as written. The text is rendered using the design 
+system's monospace typeface and is used wrapped around `<code>` elements to 
+show it is a code block.
+
+<!-- Note: 
+`<pre>` element does not work within ### Coded Example 
+<Canvas> so the example code wraps 
+-->
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<pre>
+<code>The is a preformatted code block</code>
+</pre>
+</Canvas>
+
+
+<div id="Sample" style={{ marginTop: "80px", }}></div>
+
+## Sample Output
+
+For sample output text, such as the output from a computer program or to represent 
+the command line, the `<samp>` element is used to enclose the inline text.
+Note that to add syntax colors a `<span>` may be used with inline styling applied to 
+change the text color as required.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<samp>
+$ <span style={{ color: "lime" }}>nikki@DESIGN_SYSTEMS</span> <span style={{ color: "yellow" }}>~/GitHub/ally-design-system</span> npm run dev-d <br />
+$ █
+</samp>
+</Canvas>
+
+
+<div id="Variable" style={{ marginTop: "80px", }}></div>
+
+## Variable
+
+To represent the name of a variable in a mathematical expression or a programming 
+context the `<var>` element should be used, presenting the variable name using 
+italic and bold styling.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+</Canvas>
+
+
+<div id="Sup" style={{ marginTop: "80px", }}></div>
+
+## Superscript
+
+Superscript is text rendered on a higher baseline than other inline text
+and is diplayed in a smaller font size. The `<sup>` element is used to specify 
+inline text which is to be displayed as superscript such as for in 
+mathematical equations.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>The most well known physics equations is: <var>E</var>=<var>m</var><var>c</var><sup>2</sup></p>
+</Canvas>
+
+
+<div id="Sub" style={{ marginTop: "80px", }}></div>
+
+## Subscript
+
+Subscript is text rendered on a lower baseline than other inline text
+and is also displayed in a smaller font size, the same as for superscript. 
+The `<sub>` element is used to specify inline text which is to be displayed as 
+subscript such as for denoting the number of atoms of a given element 
+within a chemical formula.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>Every developers favourite chemical formula is: C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, otherwise known as <b>caffeine</b>.</p>
+</Canvas>
+
+
+<div id="key" style={{ marginTop: "80px", }}></div>
+
+## Keyboard Input
+
+To display text which represents a keyboard user input as a key, use the `<kbd>` 
+element which will render the keyboard input with a keyboard key-like style.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<p>To open <b>Task Manager</b> in Windows, press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> together and then select <b>Task Manager</b> from your list of options.</p>
+</Canvas>
+
+
+<div id="Break" style={{ marginTop: "80px", }}></div>
+
+## Thematic Break
+
+A thematic break is used to convey a change of scene in a story, or a shift of 
+topic within a section between paragraph-level elements. To render this the 
+`<hr/>` element should be used. This element didn't used to have a semantic meaning 
+and instead was used to simply render a horizontal rule (line). If you simply need to show 
+a horizontal rule, for styling purposes only, an atom component should be 
+created using a styled `<div>` element instead or within layout styling as appropriate.
+
+### Coded Example 
+<Canvas style={{ margin: "0", }}>
+<section>
+<p>Lorem ipsum dolor sit amet.</p>
+<hr />
+<p>Consectetur adipiscing elit.</p>
+</section>
+</Canvas>

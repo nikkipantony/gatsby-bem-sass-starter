@@ -457,7 +457,7 @@
   },
   {
     "name": "$radii",
-    "value": "( square: 0px, rounded: 3px, )",
+    "value": "( square: 0px, rounded: 4px, )",
     "mapValue": [
       {
         "name": "square",
@@ -466,11 +466,11 @@
       },
       {
         "name": "rounded",
-        "value": "3px",
-        "compiledValue": "3px"
+        "value": "4px",
+        "compiledValue": "4px"
       }
     ],
-    "compiledValue": "(square: 0px, rounded: 3px)"
+    "compiledValue": "(square: 0px, rounded: 4px)"
   },
   {
     "name": "$transitions",

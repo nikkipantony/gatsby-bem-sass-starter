@@ -7,6 +7,50 @@
 
 <style>
     /* Custom Ally Classes */
+    .ally-canvas {
+        margin: 0;
+    }
+
+    .ally-canvas__palette-wrapper {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .ally-canvas__figure-wrapper {
+        margin: 0 auto 30px;
+    }
+
+    .ally-canvas__figure {
+        margin: 0 10px;
+        width: 200px;
+        padding: 14px 14px 0;
+        background: #fefefe;
+        border-radius: 4px;
+        border: 2px solid #000013;
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 0;
+    }
+
+    .ally-canvas__figure-display {
+        height: 120px;
+        width: 100%;
+        border-radius: 3px;
+        border: 2px solid #000013;
+    }
+
+    .ally-canvas__figure-caption {
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+            Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        color: #000013;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: left;
+        padding: 0.5rem 0 1rem;
+        opacity: 1;
+        font-style: normal;
+    }
+
     .ally-design-tokens-motion {
         background-color: #ffd700;
     }
@@ -15,10 +59,23 @@
         background-color: #fcfcfc;
     }
 
+    .ally-headings .innerZoomElementWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
     /* Docs Page */
     .css-t7viak {
         background: #fcfcfc !important;
         overflow: hidden !important;
+    }
+
+    .css-1gh4yjl {
+        max-width: 800px !important;
+    }
+
+    .css-zgt7u1 {
+        padding: 40px 20px !important;
     }
 
     /* Docs Heading */
@@ -75,6 +132,7 @@
     /* Docs Preview Block */
     .css-kdwx3d {
         background: #fcfcfc !important;
+        min-height: 120px !important;
     }
 
     .css-1fqqvvq {
@@ -153,11 +211,6 @@
         background: #000013 !important;
     }
 
-    code {
-        color: #fcfcfc !important;
-        font-size: 16px !important;
-    }
-
     .css-1h4ytzj code {
         padding: 10px 20px !important;
     }
@@ -194,11 +247,30 @@
     }
 
     .css-ywd5pw button {
-        margin: 5px 5px 7px !important;
+        margin: 0 14px 5px 0 !important;
+        padding: 4px 4px 6px !important;
+        background: #ffd700 !important;
     }
 
     .css-crosow {
         padding: 5px !important;
+        border: solid #000013 2px !important;
+        border-radius: 4px !important;
+        background: #ffd700 !important;
+        color: #000013 !important;
+    }
+
+    .css-crosow:focus,
+    .css-crosow:hover,
+    .css-crosow:active,
+    .css-crosow:focus-visible {
+        box-shadow: none !important;
+        background: #ffe75d !important;
+    }
+
+    .css-1az4em2 {
+        background: #000013 !important;
+        right: 2px !important;
     }
 
     /* Args Table Block */

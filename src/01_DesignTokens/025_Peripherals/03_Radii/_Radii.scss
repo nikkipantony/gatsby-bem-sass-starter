@@ -1,0 +1,27 @@
+/*
+ * Radius Design Tokens
+ *
+ */
+
+// Radius Values
+$radii: (
+    square: 0px,
+    rounded: 4px,
+);
+
+// Radius Design Tokens Config
+@function radius($name) {
+    @if map-has-key($radii, $name) {
+        @return map-get($radii, $name);
+    }
+
+    @error "The key #{$name} is not in the $radii design token map";
+    @return null;
+}
+
+// Radius Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    brs  border-radius: radius(square);
+    brr  border-radius: radius(rounded);
+*/

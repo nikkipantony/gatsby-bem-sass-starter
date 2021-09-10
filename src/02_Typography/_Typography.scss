@@ -1,0 +1,400 @@
+/*
+ * Typography Styles
+ *
+ */
+
+// Import Fonts From Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:wght@400;700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+// To host a font locally create a new folder within the `10_Styles`
+// folder to save the font files within.
+// Then, add your @font-face rules to this file or use the gatsby
+// plugin listed below or typography.js to manage your fonts.
+// https://www.gatsbyjs.com/docs/recipes/styling-css#adding-a-local-font
+// https://www.gatsbyjs.com/docs/typography-js
+// https://www.gatsbyjs.com/plugins/gatsby-plugin-your-fonts
+// https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display
+// https://css-tricks.com/snippets/css/using-font-face
+// https://google-webfonts-helper.herokuapp.com/fonts
+
+// All Typography elements styled within this stylesheet are
+// accompanied by a link to the appropriate MDN Docs for
+// further information and guidance if needed.
+
+// Headings
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: typeface(rubik);
+    font-weight: font-weight(bold);
+    line-height: leading(regular);
+    letter-spacing: tracking(normal);
+    color: brand-color(midnight);
+    margin-bottom: spacing(l);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: spacing(l) 0;
+}
+
+h1 {
+    font-size: font-size(hxl);
+}
+
+h2 {
+    font-size: font-size(hl);
+}
+
+h3 {
+    font-size: font-size(hm);
+}
+
+h4 {
+    font-size: font-size(hs);
+}
+
+h5 {
+    font-size: font-size(hxs);
+}
+
+h6 {
+    font-size: font-size(hxs);
+    font-style: italic;
+}
+
+// Paragraphs
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+p {
+    font-family: typeface(archivo);
+    font-size: font-size(cm);
+    font-weight: font-weight(regular);
+    line-height: leading(regular);
+    letter-spacing: tracking(normal);
+    color: brand-color(midnight);
+    margin-bottom: spacing(s);
+}
+
+// Links
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+a,
+a:link,
+a:visited {
+    font-family: typeface(archivo);
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
+    line-height: leading(regular);
+    letter-spacing: tracking(normal);
+    color: brand-color(midnight);
+    text-decoration: underline;
+
+    &:hover,
+    &:active,
+    &.focus-visible {
+        background: brand-color(gold);
+    }
+}
+
+// Microcopy
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small
+small {
+    font-size: font-size(cs);
+    font-weight: font-weight(regular);
+    color: brand-color(midnight);
+}
+
+// Emphasis
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
+em {
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
+    font-style: italic;
+    color: brand-color(midnight);
+}
+
+// Idiomatic Text
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+i {
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
+    font-style: italic;
+    color: brand-color(midnight);
+}
+
+// Strong Importance
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+strong {
+    font-weight: font-weight(bold);
+    color: brand-color(midnight);
+}
+
+// Bring Attention
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
+b {
+    font-weight: font-weight(bold);
+}
+
+// Highlighting
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
+// https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible
+// Note: Accessibility Concerns
+// The presence of the mark element is not announced by most screen reading technology in its default configuration.
+// It can be made to be announced using a span with the .sr-only class at the start and end of the highlighted text.
+// ie: <mark><span className="sr-only"> [highlight starts] </span> Highlighed Text <span className="sr-only"> [highlight ends] </span><mark>
+mark {
+    background-color: brand-color(gold);
+    color: brand-color(midnight);
+}
+
+// Abbreviations
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
+abbr {
+    font-style: italic;
+    text-decoration: none;
+    border-bottom: dotted brand-color(midnight) 3px;
+    cursor: help;
+}
+
+// Definitions
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn
+dfn {
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
+    font-style: italic;
+    color: brand-color(midnight);
+}
+
+// Unarticulated Annotation
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u
+u {
+    font-style: italic;
+    text-decoration: none;
+    border-bottom: border(error);
+}
+
+// Strikethrough
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s
+s {
+    text-decoration: line-through;
+}
+
+// Deleted / Inserted Text
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
+del,
+ins {
+    text-decoration: line-through;
+    background-color: tint(action-color(error), t60);
+    color: brand-color(midnight);
+    font-weight: font-weight(bold);
+    padding: spacing(xxxxs) spacing(xxs);
+}
+
+ins {
+    text-decoration: none;
+    background-color: tint(action-color(success), t60);
+}
+
+// Lists
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
+ul,
+ol {
+    margin: spacing(xl) 0;
+    padding-left: spacing(xxxxl);
+
+    li {
+        margin: spacing(xxs) 0;
+        font-size: font-size(cm);
+        font-weight: font-weight(bold);
+    }
+}
+
+// Time
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time
+time {
+    font-family: typeface(archivo);
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
+    line-height: leading(regular);
+    letter-spacing: tracking(normal);
+    color: brand-color(midnight);
+}
+
+// Address
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address
+address {
+    font-style: italic;
+    padding-bottom: spacing(l);
+}
+
+// Figure Captions
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
+figure img {
+    border: border(default);
+}
+
+figcaption {
+    font-size: font-size(cs);
+    font-weight: font-weight(bold);
+    color: brand-color(midnight);
+    font-style: italic;
+    opacity: opacity(o75);
+    line-height: leading(tall);
+    text-align: left;
+    margin-top: spacing(xxs);
+}
+
+// Quotation
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q
+q {
+    font-style: italic;
+    color: brand-color(midnight);
+
+    a,
+    a:link,
+    a:visited,
+    a:active {
+        font-weight: font-weight(regular);
+    }
+}
+
+// Block Quotations
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
+blockquote {
+    margin: spacing(xxxl) 0 spacing(l);
+    width: 100%;
+    max-width: 740px;
+
+    p {
+        font-size: font-size(cm);
+        color: brand-color(midnight);
+        line-height: leading(regular);
+        font-weight: font-weight(bold);
+        padding: spacing(xl) spacing(xxl);
+        border: border(default);
+        border-radius: radius(square);
+        box-shadow: spacing(s) spacing(s) 0 0 brand-color(midnight);
+        background: brand-color(gold);
+    }
+
+    & ~ figcaption {
+        font-size: font-size(cs);
+        font-weight: font-weight(bold);
+        color: brand-color(midnight);
+        font-style: italic;
+        opacity: opacity(o75);
+        line-height: leading(regular);
+        text-align: right;
+        padding: 0 spacing(xxs) spacing(xl);
+        max-width: 740px;
+    }
+}
+
+figure > figcaption > cite > a,
+figure > figcaption > cite > a:link,
+figure > figcaption > cite > a:visited,
+figure > figcaption > cite > a:active {
+    font-size: font-size(cs);
+}
+
+// Citations (for Quotations)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
+cite,
+cite a {
+    font-style: italic;
+}
+
+// Inline Code
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code
+code {
+    color: brand-color(snow);
+    font-size: font-size(cs);
+    font-weight: font-weight(bold);
+    background-color: brand-color(midnight);
+    border-radius: radius(rounded);
+    font-family: typeface(mono);
+    line-height: leading(regular);
+    margin: 0 spacing(xxxs);
+    padding: spacing(xxxs) 4px;
+    border: 0;
+}
+
+// Code Blocks (Preformatted Text)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
+// Note: The `pre` element does not work within <Canvas> so the example code wraps instead of being pre-formatted as desired.
+pre {
+    display: block;
+    color: brand-color(snow);
+    font-size: font-size(cs);
+    font-weight: font-weight(bold);
+    background-color: brand-color(midnight);
+    border-radius: radius(square);
+    font-family: typeface(mono);
+    padding: spacing(s);
+    margin: 0 0 spacing(xl);
+}
+
+// Sample Output
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp
+samp {
+    display: block;
+    color: brand-color(snow);
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
+    background-color: brand-color(midnight);
+    border-radius: radius(square);
+    font-family: typeface(mono);
+    padding: spacing(m);
+    margin: 0 0 spacing(xl);
+}
+
+// Variable
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var
+var {
+    font-size: font-size(cm);
+    font-weight: font-weight(bold);
+    font-style: italic;
+    color: brand-color(midnight);
+}
+
+// Superscript
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
+// sup {}
+
+// Subscript
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
+// sub {}
+
+// Keyboard Input
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd
+kbd {
+    display: inline-block;
+    font-family: typeface(mono);
+    font-size: font-size(cm);
+    color: brand-color(midnight);
+    font-weight: font-weight(bold);
+    line-height: 1;
+    background-color: shade(brand-color(snow), s20);
+    border-radius: radius(rounded);
+    border: solid brand-color(midnight) 1px;
+    box-shadow: 0 spacing(xxxxs) spacing(xxxxs) tint(brand-color(midnight), t20),
+        0 spacing(xxxs) 0 0 shade(brand-color(snow), s20) inset;
+    padding: spacing(xxxs) spacing(xxs);
+    white-space: nowrap;
+}
+
+// Thematic Break (Horizontal Rule)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr
+hr {
+    border: none;
+    border-top: border(default);
+    margin: spacing(xxl) 0;
+}

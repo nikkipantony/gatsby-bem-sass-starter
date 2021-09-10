@@ -1,0 +1,35 @@
+/*
+ * Typeface Design Tokens
+ *
+ * Fonts are imported in `./src/10_Styles/Fonts`
+ */
+
+// Typeface Variable String Values
+$rubik: "Rubik", sans-serif;
+$archivo: "Archivo", sans-serif;
+$mono: "IBM Plex Mono", monospace;
+
+// Typeface Values
+$typefaces: (
+    rubik: $rubik,
+    archivo: $archivo,
+    mono: $mono,
+);
+
+// Typeface Design Tokens Config
+@function typeface($name) {
+    @if map-has-key($typefaces, $name) {
+        @return map-get($typefaces, $name);
+    }
+
+    @error "The key #{$name} is not in the $typefaces design token map";
+    @return null;
+}
+
+// Typeface Design Token Usage With VS Code Code Snippets
+// Snippets can be customized as required in: `./.vscode/ally.code-snippets`
+/*
+    tr  font-family: typeface(rubik);
+    ta  font-family: typeface(archivo);
+    tm  font-family: typeface(mono);
+*/
