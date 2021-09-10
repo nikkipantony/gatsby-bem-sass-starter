@@ -553,11 +553,18 @@ element which will render the keyboard input with a keyboard key like style.
 
 ## Thematic Break
 
-Thematic Break (Horizontal Rule)
+A thematic break is used to convey a change of scene in a story, or a shift of 
+topic within a section between paragraph-level elements. To render this the 
+`<hr/>` element should be used. This element didn't used to have a semantic meaning 
+and instead was used to simply render a horizontal rule (line). If you simply need to show 
+a horizontal rule, for styling purposes only an Atom component should be 
+created using a styled `<div>` element instead or within layout styling as appropriate.
 
 ### Coded Example 
 <Canvas style={{ margin: "0", }}>
-    <div>
-        <p>x</p>
-    </div>
+<section>
+<p>Lorem ipsum dolor sit amet.</p>
+<hr />
+<p>Consectetur adipiscing elit.</p>
+</section>
 </Canvas>
