@@ -369,15 +369,14 @@ var {
 
 // Superscript
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
+// sup {}
 
 // Subscript
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
+// sub {}
 
 // Keyboard Input
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd
-// The <kbd> element represents inline text denoting textual user input from a keyboard, voice input, or any other text entry device.
-// By convention, the user agent defaults to rendering the contents of a <kbd> element using its default monospace font, although
-// this is not mandated by the HTML standard.
 kbd {
     display: inline-block;
     font-family: typeface(mono);
