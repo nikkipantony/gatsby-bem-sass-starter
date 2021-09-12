@@ -10,17 +10,17 @@
 	"material-icon-theme.folders.color": "#ffd700",
 	"material-icon-theme.folders.associations": {
 		".cache": "Database",
-		".storybook": "Config",
+		".storybook": "Storybook",
 		".vscode": "Vscode",
-		"design_assets": "Custom",
-		"design_tokens": "Theme",
+		"design_tokens": "Json",
 		"node_modules": "Node",
 		"public": "Public",
 		"public-design-system": "Public",
 		"public-storybook": "Public",
-		"00_GettingStarted": "SVG",
-		"01_Guidelines": "Lib",
-		"02_DesignTokens": "Theme",
+		"00_AllyGetStarted": "Container",
+		"00_Foundations": "Lib",
+		"01_DesignTokens": "Theme",
+		"02_Typography": "Font",
 		"03_Atoms": "Cluster",
 		"04_Molecules": "App",
 		"05_Organisms": "Components",
@@ -28,7 +28,8 @@
 		"07_Pages": "Content",
 		"08_images": "Images",
 		"09_utilities": "Pipe",
-		"10_styles": "Sass"
+		"10_styles": "Sass",
+		"Icon": "SVG"
 	},
 	"material-icon-theme.files.associations": {
 		"*.js": "react"
@@ -61,6 +62,19 @@
 
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact"
+	},
+	"mdx-preview.preview.useWhiteBackground": true,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"git.autofetch": true,
+	"material-icon-theme.languages.associations": {},
+	"terminal.integrated.tabs.enabled": true,
+	"terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\bin\\bash.exe (migrated)",
+	"terminal.integrated.profiles.windows": {
+		"C:\\Program Files\\Git\\bin\\bash.exe (migrated)": {
+			"path": "C:\\Program Files\\Git\\bin\\bash.exe",
+			"args": []
+		}
 	},
 	"cSpell.words": [
 		"Aldous",
