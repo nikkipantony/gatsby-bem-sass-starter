@@ -1,32 +1,36 @@
 /*
- * Button Component Stories
+ * Button Component Story
  *
  */
 
 import React from "react"
-import Button from "./Button"
+import Component from "./Button"
 
 export default {
     title: "Atoms/Button",
-    component: Button,
+    component: Component,
+    parameters: {
+        docs: {
+            description: {
+                component: "Button component.",
+            },
+        },
+    },
     argTypes: {
         text: {
-            description: "Props description",
-        },
-        className: {
-            description: "Props description",
+            description: "Button text",
+            defaultValue: "Button",
         },
         modifier: {
-            description: "Props description",
+            description: "Modifier options",
+            control: {
+                type: "select",
+                labels: {
+                    "": "no modifier",
+                },
+            },
         },
     },
 }
 
-// export const Working = () => <Button text="Ally Starter Kit" />
-
-export const DefaultButton = args => <Button {...args} />
-DefaultButton.args = {
-    text: "Button Text",
-    className: "",
-    modifier: "null",
-}
+export const Button = args => <Component {...args} />

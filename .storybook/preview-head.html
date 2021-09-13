@@ -6,6 +6,13 @@
 -->
 
 <style>
+    /* Theme */
+    :root {
+        --primary-theme-color: #ffd700;
+        --fg-theme-color: #000013;
+        --bg-theme-color: #fefefe;
+    }
+
     /* Custom Ally Classes */
     .ally-canvas {
         margin: 0;
@@ -26,23 +33,23 @@
         margin: 0 10px;
         width: 200px;
         padding: 14px 14px 0;
-        background: #fefefe;
+        background: var(--bg-theme-color);
         border-radius: 4px;
-        border: 2px solid #000013;
-        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 0;
+        border: 2px solid var(--fg-theme-color);
+        box-shadow: var(--fg-theme-color) 0 4px 6px 0;
     }
 
     .ally-canvas__figure-display {
         height: 120px;
         width: 100%;
         border-radius: 3px;
-        border: 2px solid #000013;
+        border: 2px solid var(--fg-theme-color);
     }
 
     .ally-canvas__figure-caption {
         font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
             Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-        color: #000013;
+        color: var(--fg-theme-color);
         font-size: 14px;
         font-weight: 700;
         text-align: left;
@@ -52,11 +59,11 @@
     }
 
     .ally-design-tokens-motion {
-        background-color: #ffd700;
+        background-color: var(--primary-theme-color);
     }
 
     .ally-design-tokens-motion:hover {
-        background-color: #fcfcfc;
+        background-color: var(--bg-theme-color);
     }
 
     .ally-headings .innerZoomElementWrapper {
@@ -66,7 +73,7 @@
 
     /* Docs Page */
     .css-t7viak {
-        background: #fcfcfc !important;
+        background: var(--bg-theme-color) !important;
         overflow: hidden !important;
     }
 
@@ -81,23 +88,23 @@
     /* Docs Heading */
     .css-1d8ls76 {
         font-size: 3rem !important;
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     .css-1lg570m {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         font-size: 39px !important;
         padding-bottom: 3px !important;
-        border-bottom: 2px solid #000013 !important;
+        border-bottom: 2px solid var(--fg-theme-color) !important;
         margin-bottom: 14px !important;
     }
 
     .css-1j28tt {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     .css-z9ai3 {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     .css-1j28tt {
@@ -108,7 +115,7 @@
     /* Docs Paragraphs */
     .css-1p8ieni {
         font-family: "Archivo", sans-serif !important;
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         font-size: 1rem !important;
         font-weight: 400 !important;
         line-height: 1.5 !important;
@@ -125,20 +132,42 @@
         border-radius: 4px !important;
         font-size: 13px !important;
         border: 0 !important;
-        color: #fefefe !important;
-        background-color: #000013 !important;
+        color: var(--bg-theme-color) !important;
+        background-color: var(--fg-theme-color) !important;
     }
 
     /* Docs Preview Block */
     .css-kdwx3d {
-        background: #fcfcfc !important;
+        background: var(--bg-theme-color) !important;
         min-height: 120px !important;
+        box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px 0px !important;
+        border: 2px solid var(--fg-theme-color) !important;
     }
 
     .css-1fqqvvq {
-        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 0 !important;
+        /* box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 0 !important;
         border: 2px solid rgba(0, 0, 13, 1) !important;
-        border-radius: 4px !important;
+        border-radius: 4px !important; */
+        padding-top: 0 !important;
+    }
+
+    .css-1wjen9k {
+        padding: 60px 20px !important;
+    }
+
+    /* Docs Preview Block Open Canvas Button */
+    .css-pvky73 > * {
+        margin: 3px 15px 0 0 !important;
+    }
+
+    .css-xddykm > svg {
+        width: 20px !important;
+    }
+
+    .css-xddykm:hover,
+    .css-xddykm:focus {
+        color: var(--fg-theme-color) !important;
+        background: transparent !important;
     }
 
     /* Docs Preview Block Header */
@@ -152,27 +181,41 @@
     .os-scrollbar,
     .os-scrollbar-track,
     .os-scrollbar-handle {
-        background: #ffd700 !important;
+        background: transparent !important;
         border: none !important;
         box-shadow: none !important;
+        /* display: none !important; */
     }
 
+    /* .css-p1dfi6 { */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 0 0 inset !important; */
+    /* border-bottom: 2px solid var(--fg-theme-color) !important; */
+    /* } */
+
+    /* .css-p1dfi6 {
+        display: none !important;
+    } */
+
+    /* Hide Zoom Buttons */
     .css-p1dfi6 {
-        box-shadow: rgba(0, 0, 0, 0.1) 0 -1px 0 0 inset !important;
-        border-bottom: 2px solid #000013 !important;
+        justify-content: flex-end !important;
+    }
+
+    .css-11sh1n2 {
+        display: none !important;
     }
 
     /* Docs Preview Block Header Icons */
     .css-1wkncey {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         border-bottom: none !important;
         padding: 3px 6px 0 !important;
     }
 
     .css-1wkncey:hover,
     .css-1wkncey:focus {
-        background: #ffe75d !important;
-        border-bottom: solid #000013 3px !important;
+        background: var(--primary-theme-color) !important;
+        border-bottom: solid var(--fg-theme-color) 3px !important;
     }
 
     .css-1wkncey:hover > svg,
@@ -190,25 +233,25 @@
     .css-1imo1gr {
         font-size: 14px !important;
         line-height: 1.4 !important;
-        color: #000013 !important;
-        background: #ffd700 !important;
+        color: var(--fg-theme-color) !important;
+        background: var(--primary-theme-color) !important;
         opacity: 1 !important;
         border-radius: 4px !important;
-        border: 2px solid #000013 !important;
+        border: 2px solid var(--fg-theme-color) !important;
         margin: 0 15px 12px 0 !important;
         box-shadow: none !important;
     }
 
     .css-1imo1gr:hover,
     .css-1imo1gr:focus {
-        background: #ffe75d !important;
+        background: var(--primary-theme-color) !important;
         box-shadow: none !important;
     }
 
     /* Docs Preview Block Code */
     .css-1ocpa5l pre.hljs {
         padding: 15px !important;
-        background: #000013 !important;
+        background: var(--fg-theme-color) !important;
     }
 
     .css-1h4ytzj code {
@@ -217,29 +260,30 @@
 
     .css-ywd5pw pre.prismjs {
         padding: 10px !important;
+        background: var(--fg-theme-color) !important;
     }
 
     /* Docs Preview Block Copy Code Button */
     .css-wn6lpt {
-        border: 2px #000013 solid !important;
+        border: 2px var(--fg-theme-color) solid !important;
         padding: 4px 10px !important;
-        color: #000013 !important;
-        background: #ffd700 !important;
+        color: var(--fg-theme-color) !important;
+        background: var(--primary-theme-color) !important;
         font-size: 14px !important;
         line-height: 16px !important;
-        font-weight: bold !important;
+        font-weight: 700 !important;
         border-radius: 4px !important;
         margin: 15px 15px !important;
     }
 
     .css-wn6lpt:hover,
     .css-wn6lpt:focus {
-        background: #ffe75d !important;
+        background: var(--primary-theme-color) !important;
         box-shadow: none !important;
     }
 
     .css-1xxxe71 {
-        background: #000013 !important;
+        background: var(--fg-theme-color) !important;
     }
 
     .css-1az4em2 {
@@ -249,15 +293,15 @@
     .css-ywd5pw button {
         margin: 0 14px 5px 0 !important;
         padding: 4px 4px 6px !important;
-        background: #ffd700 !important;
+        background: var(--primary-theme-color) !important;
     }
 
     .css-crosow {
         padding: 5px !important;
-        border: solid #000013 2px !important;
+        border: solid var(--fg-theme-color) 2px !important;
         border-radius: 4px !important;
-        background: #ffd700 !important;
-        color: #000013 !important;
+        background: var(--primary-theme-color) !important;
+        color: var(--fg-theme-color) !important;
     }
 
     .css-crosow:focus,
@@ -265,19 +309,19 @@
     .css-crosow:active,
     .css-crosow:focus-visible {
         box-shadow: none !important;
-        background: #ffe75d !important;
+        background: var(--primary-theme-color) !important;
     }
 
     .css-1az4em2 {
-        background: #000013 !important;
+        background: var(--fg-theme-color) !important;
         right: 2px !important;
     }
 
     /* Args Table Block */
     .css-6hhrgj {
-        border-collapse: separate !important;
+        border-collapse: collapse !important;
         padding-top: 4px !important;
-        background: #ffd700 !important;
+        background: var(--primary-theme-color) !important;
         box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 0 !important;
         border: 2px solid rgba(0, 0, 13, 1) !important;
         border-radius: 4px !important;
@@ -294,15 +338,15 @@
 
     /* Args Table Head */
     .css-6hhrgj th {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         font-size: 16px !important;
-        border-bottom: 2px solid rgba(0, 0, 13, 1) !important;
+        border-bottom: 2px solid var(--fg-theme-color) !important;
     }
 
     /* Args Table Body */
     .docblock-argstable-body {
-        background-color: #fcfcfc !important;
-        border-color: #fcfcfc !important;
+        background-color: var(--bg-theme-color) !important;
+        border-color: var(--bg-theme-color) !important;
     }
 
     .css-6hhrgj.css-6hhrgj tr:first-child td:first-child,
@@ -316,7 +360,7 @@
     }
 
     .css-6hhrgj tbody td {
-        background: #fcfcfc !important;
+        background: var(--bg-theme-color) !important;
     }
 
     .css-6hhrgj.css-6hhrgj td,
@@ -352,12 +396,19 @@
         padding-left: 15px !important;
     }
 
+    /* Table Row Divider Lines */
+    .css-6hhrgj tbody tr:not(:first-child) {
+        border-top-width: 1px !important;
+        border-top-style: solid !important;
+        border-top-color: var(--fg-theme-color) !important;
+    }
+
     /* Args Table Text */
     .css-6hhrgj td {
-        padding-top: 14px !important;
-        padding-bottom: 10px !important;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
         font-size: 15px !important;
-        font-weight: bold !important;
+        font-weight: 700 !important;
     }
 
     .css-6hhrgj tr:last-child td:first-child,
@@ -368,6 +419,10 @@
     .css-6hhrgj td:last-child,
     .css-6hhrgj th:last-child {
         border-bottom-right-radius: 0 !important;
+    }
+
+    .css-1521b8c > span {
+        line-height: 30px !important;
     }
 
     /* Hide Default Value Column */
@@ -382,12 +437,17 @@
         width: 20% !important;
     }
 
+    /* Style Name Column Text */
+    .css-in3yi3 {
+        text-transform: capitalize !important;
+    }
+
     /* Reset Controls Button */
     .css-1m2jg1k {
-        color: #000013 !important;
-        background: #ffd700 !important;
+        color: var(--fg-theme-color) !important;
+        background: var(--primary-theme-color) !important;
         opacity: 1 !important;
-        border: 2px solid #000013 !important;
+        border: 2px solid var(--fg-theme-color) !important;
         border-radius: 12px !important;
         box-shadow: none !important;
         margin: -2px 0 2px 0 !important;
@@ -395,23 +455,28 @@
 
     .css-1m2jg1k:hover,
     .css-1m2jg1k:focus {
-        background: #ffe75d !important;
+        background: var(--primary-theme-color) !important;
         box-shadow: none !important;
     }
 
     /* Args Table Props Description */
     .css-6hhrgj {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
+    }
+
+    /* Don't Render Props Options */
+    .css-fimcbu {
+        display: none;
     }
 
     /* Args Table Props Values */
     .css-1j8m42i {
         border: none !important;
         border-radius: 4px !important;
-        color: #000013 !important;
-        background-color: #ededed !important;
+        color: var(--fg-theme-color) !important;
+        background-color: var(--bg-theme-color) !important;
         font-size: 14px !important;
-        font-weight: bold !important;
+        font-weight: 700 !important;
         margin: 4px 8px 4px 0 !important;
         padding: 6px !important;
     }
@@ -419,26 +484,52 @@
     /* Control Input Textarea */
     .css-s1svjz {
         font-size: 14px !important;
-        font-weight: bold !important;
-        color: #000013 !important;
-        box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 2px !important;
+        font-weight: 700 !important;
+        color: var(--fg-theme-color) !important;
+        box-shadow: var(--fg-theme-color) 0 0 0 2px !important;
     }
 
     .css-s1svjz:focus {
-        box-shadow: #000013 0 0 0 2px !important;
+        box-shadow: var(--fg-theme-color) 0 0 0 2px !important;
+    }
+
+    .css-141ccx4 {
+        color: var(--fg-theme-color) !important;
+        font-weight: 700 !important;
+        min-height: 32px !important;
+        max-height: 64px !important;
+        max-width: 400px !important;
+        box-shadow: var(--fg-theme-color) 0 0 0 2px !important;
     }
 
     /* Control Select Dropdown */
     .css-qq4fw3 {
         font-size: 14px !important;
-        font-weight: bold !important;
-        color: #000013 !important;
-        box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 2px inset !important;
+        font-weight: 700 !important;
+        color: var(--fg-theme-color) !important;
+        box-shadow: var(--fg-theme-color) 0 0 0 2px inset !important;
         cursor: pointer !important;
         padding: 8px 10px !important;
     }
 
-    .css-qq4fw3:focus {
-        box-shadow: #000013 0 0 0 2px inset !important;
+    .css-1h8u63y {
+        color: var(--fg-theme-color) !important;
+        font-weight: 700 !important;
+        border-radius: 6px !important;
+        box-shadow: var(--fg-theme-color) 0 0 0 2px inset !important;
+        cursor: pointer !important;
+    }
+
+    .css-1h8u63y:focus {
+        box-shadow: var(--fg-theme-color) 0 0 0 2px inset !important;
+    }
+
+    option {
+        font-weight: 700 !important;
+    }
+
+    /* Hide Empty ArgTable Block */
+    .docblock-emptyblock {
+        display: none !important;
     }
 </style>

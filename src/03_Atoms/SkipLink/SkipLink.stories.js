@@ -1,14 +1,36 @@
 /*
- * Skip Link Component Stories
+ * SkipLink Component Story
  *
  */
 
 import React from "react"
-import SkipLink from "./SkipLink"
+import Component from "./SkipLink"
 
 export default {
     title: "Atoms/Skip Link",
-    component: SkipLink,
+    component: Component,
+    parameters: {
+        docs: {
+            description: {
+                component: "Skip link component.",
+            },
+        },
+    },
+    argTypes: {
+        text: {
+            description: "Link text",
+            defaultValue: "Skip to main content",
+        },
+        modifier: {
+            description: "Modifier options",
+            control: {
+                type: "select",
+                labels: {
+                    "": "no modifier",
+                },
+            },
+        },
+    },
 }
 
-export const Working = () => <SkipLink />
+export const SkipLink = args => <Component {...args} />

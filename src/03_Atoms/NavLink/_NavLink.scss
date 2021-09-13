@@ -1,18 +1,18 @@
 /*
- * Navigation Link Styles
+ * NavLink Component Styles
  *
  */
 
-a {
-    &.nav-link,
-    &.active {
-        padding: spacing(xxs);
-        text-decoration: none;
-        background: none;
-        border-bottom: none;
-    }
+a.nav-link,
+a:link.nav-link,
+a:visited.nav-link {
+    padding: spacing(xxs);
+    text-decoration: none;
+    background: none;
+    border-bottom: none;
 
-    &.active {
+    &.active,
+    &:hover {
         background: brand-color(gold);
         border-bottom: border(default);
     }

@@ -1,8 +1,9 @@
 /*
- * Header Styles
+ * Header Component Styles
  *
  */
 
+header.header,
 .header {
     z-index: zlayer(Header);
     background-color: brand-color(snow);

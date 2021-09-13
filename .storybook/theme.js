@@ -9,7 +9,12 @@
 // Import the `create()` function to generate a new theme
 import { create } from "@storybook/theming/create"
 
-// Set custom storybook theme variables
+// Theming in CSS with CSS Custom Properties (Variables)
+// --primary-theme-color: #ffd700;
+// --fg-theme-color: #000013;
+// --bg-theme-color: #fefefe;
+
+// Set base custom storybook theme variables
 export default create({
     // Base theme - Either "light" or "dark"
     base: "light", // Required for theme to work
@@ -19,13 +24,13 @@ export default create({
     colorSecondary: "#000013",
 
     // UI colours
-    appBg: "#fcfcfc",
-    appContentBg: "#fcfcfc",
+    appBg: "#fefefe",
+    appContentBg: "#fefefe",
     appBorderColor: "#ffd700",
     appBorderRadius: 0,
 
     // Typography
-    fontBase: '"Arimo", sans-serif',
+    fontBase: '"Rubik", sans-serif',
     fontCode: "monospace",
 
     // Text colours
@@ -38,7 +43,7 @@ export default create({
     barBg: "#ffd700",
 
     // Form colours
-    inputBg: "#fcfcfc",
+    inputBg: "#fefefe",
     inputBorder: "#ffd700",
     inputTextColor: "#000013",
     inputBorderRadius: 0,

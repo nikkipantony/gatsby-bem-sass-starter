@@ -1,18 +1,40 @@
 /*
- * Navigation Link Component Stories
+ * NavLink Component Story
  *
  */
 
 import React from "react"
-import NavLink from "./NavLink"
+import Component from "./NavLink"
 
 export default {
     title: "Atoms/Navigation Link",
-    component: NavLink,
+    component: Component,
+    parameters: {
+        docs: {
+            description: {
+                component: "Navigation link component.",
+            },
+        },
+    },
+    argTypes: {
+        to: {
+            description: "Link to destination",
+            defaultValue: "/",
+        },
+        text: {
+            description: "Link text",
+            defaultValue: "NavLink",
+        },
+        modifier: {
+            description: "Modifier options",
+            control: {
+                type: "select",
+                labels: {
+                    "": "no modifier",
+                },
+            },
+        },
+    },
 }
 
-export const Default = () => <NavLink to="/" text="Home" />
-
-export const MissingText = () => <NavLink to="/" />
-
-export const AllPropsMissing = () => <NavLink />
+export const NavigationLink = args => <Component {...args} />
