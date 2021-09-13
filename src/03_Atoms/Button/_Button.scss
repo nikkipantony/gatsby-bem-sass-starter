@@ -1,5 +1,5 @@
 /*
- * Button Styles
+ * Button Component Styles
  *
  */
 
@@ -28,6 +28,15 @@ button,
 
     &:hover,
     &:focus {
-        background-color: tint(brand-color(gold), t40);
+        background: tint(brand-color(gold), t40);
+    }
+
+    &--delete {
+        background: tint(action-color(error), t40);
+
+        &:hover,
+        &:focus {
+            background: tint(action-color(error), t60);
+        }
     }
 }

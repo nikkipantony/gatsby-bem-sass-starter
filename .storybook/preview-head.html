@@ -275,7 +275,7 @@
 
     /* Args Table Block */
     .css-6hhrgj {
-        border-collapse: separate !important;
+        border-collapse: collapse !important;
         padding-top: 4px !important;
         background: #ffd700 !important;
         box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px 0 !important;
@@ -352,10 +352,17 @@
         padding-left: 15px !important;
     }
 
+    /* Table Row Divider Lines */
+    .css-6hhrgj tbody tr:not(:first-child) {
+        border-top-width: 1px !important;
+        border-top-style: solid !important;
+        border-top-color: #000013 !important;
+    }
+
     /* Args Table Text */
     .css-6hhrgj td {
-        padding-top: 14px !important;
-        padding-bottom: 10px !important;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
         font-size: 15px !important;
         font-weight: bold !important;
     }
@@ -370,6 +377,10 @@
         border-bottom-right-radius: 0 !important;
     }
 
+    .css-1521b8c > span {
+        line-height: 30px !important;
+    }
+
     /* Hide Default Value Column */
     .css-6hhrgj th:nth-of-type(3),
     .css-6hhrgj td:nth-of-type(3) {
@@ -380,6 +391,11 @@
     .css-6hhrgj th:first-of-type,
     .css-6hhrgj td:first-of-type {
         width: 20% !important;
+    }
+
+    /* Style Name Column Text */
+    .css-in3yi3 {
+        text-transform: capitalize !important;
     }
 
     /* Reset Controls Button */
@@ -426,6 +442,15 @@
 
     .css-s1svjz:focus {
         box-shadow: #000013 0 0 0 2px !important;
+    }
+
+    .css-141ccx4 {
+        color: #000013 !important;
+        font-weight: 700 !important;
+        min-height: 32px !important;
+        max-height: 64px !important;
+        max-width: 400px !important;
+        box-shadow: rgba(0, 0, 0, 1) 0 0 0 2px !important;
     }
 
     /* Control Select Dropdown */
