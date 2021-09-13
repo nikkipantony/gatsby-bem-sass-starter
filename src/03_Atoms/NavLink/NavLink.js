@@ -1,5 +1,5 @@
 /*
- * Navigation Link Component
+ * NavLink Component
  *
  * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
  * Gatsby Active Link: https://www.gatsbyjs.org/docs/gatsby-link/#add-custom-styles-for-the-currently-active-link
@@ -17,29 +17,25 @@ const NavigationLink = props => <Link getProps={isActive} {...props} />
 
 const NavLink = props => {
     return (
-        <>
-            <NavigationLink
-                className={`nav-link ${props.className} ${props.modifier}`}
-                to={props.to}
-            >
-                {props.text}
-            </NavigationLink>
-        </>
+        <NavigationLink
+            className={`nav-link nav-link${props.modifier}`}
+            to={props.to}
+        >
+            {props.text}
+        </NavigationLink>
     )
 }
 
 NavLink.defaultProps = {
-    to: "/",
-    text: "Missing Text",
-    className: "",
+    to: "",
+    text: "",
     modifier: "",
 }
 
 NavLink.propTypes = {
     to: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
-    className: PropTypes.string,
-    modifier: PropTypes.string,
+    modifier: PropTypes.oneOf([""]),
 }
 
 export default NavLink
