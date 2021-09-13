@@ -73,7 +73,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "dev-g": "npm run gen-dt & gatsby develop -p 8008",
+    "dev-g": "gatsby develop -p 8008",
     "dev-s": "npm run gen-dt & start-storybook -s ./public -p 6006",
     "dev-d": "start-storybook --docs -s ./public -p 5005",
     "build-g": "gatsby build",
