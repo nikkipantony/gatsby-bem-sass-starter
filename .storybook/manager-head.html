@@ -8,6 +8,13 @@
     *
 -->
 <style>
+    /* Theme */
+    :root {
+        --primary-theme-color: #ffd700;
+        --fg-theme-color: #000013;
+        --bg-theme-color: #fefefe;
+    }
+
     /* Whole Page */
     .css-rc1jbh {
         margin-top: 15px !important;
@@ -21,14 +28,14 @@
     /* Sidebar Design System Title */
     .css-azjkpq {
         font-size: 20px !important;
-        font-weight: bold !important;
+        font-weight: 700 !important;
         line-height: 1.3 !important;
     }
 
     .css-k0rvfw {
         font-size: 16px !important;
         font-weight: 900 !important;
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         margin: 0 20px 0 6px !important;
         padding-bottom: 4px !important;
     }
@@ -37,7 +44,7 @@
     .css-8nktl6 {
         background: transparent !important;
         box-shadow: none !important;
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     .css-8nktl6:hover,
@@ -54,14 +61,14 @@
 
     .css-8nktl6:focus:before {
         border: none !important;
-        box-shadow: #000013 0 0 0 2px inset !important;
+        box-shadow: var(--fg-theme-color) 0 0 0 2px inset !important;
         opacity: 0.5 !important;
     }
 
     /* Sidebar Search */
     .css-ku60v2 {
-        border: 2px solid #000013 !important;
-        background: #fefefe !important;
+        border: 2px solid var(--fg-theme-color) !important;
+        background: var(--bg-theme-color) !important;
         border-radius: 4px !important;
         font-size: 14px !important;
     }
@@ -79,7 +86,7 @@
 
     .css-89jtmc > svg path,
     .css-wii38y > svg path {
-        fill: #000013 !important;
+        fill: var(--fg-theme-color) !important;
         opacity: 1 !important;
     }
 
@@ -92,7 +99,7 @@
     }
 
     .css-1bialql {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     /* Sidebar Search Text */
@@ -105,8 +112,8 @@
     /* Sidebar Search `/` Icon */
     .css-1w9ttsv {
         font-size: 10px !important;
-        background: #000013 !important;
-        color: #fefefe !important;
+        background: var(--fg-theme-color) !important;
+        color: var(--bg-theme-color) !important;
         border-radius: 4px !important;
         font-weight: 900 !important;
     }
@@ -114,24 +121,24 @@
     /* Sidebar Search Underline */
     .css-89jtmc,
     .css-wii38y {
-        border-bottom: 2px solid #ffd700 !important;
+        border-bottom: 2px solid var(--primary-theme-color) !important;
     }
 
     /* Sidebar Section Titles */
     .css-15ovd51 {
         letter-spacing: 1px !important;
         text-transform: none !important;
-        font-weight: bold !important;
+        font-weight: 700 !important;
         font-size: 18px !important;
         line-height: 1.2 !important;
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         margin: 0 20px 2px !important;
     }
 
     .css-ulso1l {
         letter-spacing: 1px !important;
         text-transform: capitalize !important;
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         font-size: 14px !important;
         font-weight: 700 !important;
     }
@@ -139,8 +146,8 @@
     .css-1wqh1q4 {
         flex-direction: row-reverse !important;
         justify-content: space-between !important;
-        background: #ffd700 !important;
-        color: #000013 !important;
+        background: var(--primary-theme-color) !important;
+        color: var(--fg-theme-color) !important;
         border-radius: 4px !important;
         width: 100% !important;
         padding: 10px 10px 10px 16px !important;
@@ -157,14 +164,14 @@
     }
 
     .css-1j9r8vi {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         border-top: 4px solid transparent !important;
         border-bottom: 4px solid transparent !important;
         border-left: 5px solid !important;
     }
 
     .css-bt79wf {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         border-top: 4px solid transparent !important;
         border-bottom: 4px solid transparent !important;
         border-left: 5px solid !important;
@@ -206,7 +213,7 @@
     .css-joncby,
     .css-2eni24,
     .css-zv5p4l {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     /* Remove Icons From None Nested Component Names */
@@ -218,36 +225,36 @@
     .css-1026bb3 {
         width: 30px !important;
         box-shadow: none !important;
-        color: #000013 !important;
-        border: 2px solid #000013 !important;
-        background: #ffd700 !important;
+        color: var(--fg-theme-color) !important;
+        border: 2px solid var(--fg-theme-color) !important;
+        background: var(--primary-theme-color) !important;
         padding: 1px 6px !important;
     }
 
     .css-1026bb3:hover,
     .css-1026bb3:focus {
         box-shadow: none !important;
-        background: #ffe75d !important;
+        background: var(--primary-theme-color) !important;
     }
 
     /* Shortcuts Dropdown Menu Background Color */
     .css-1kq5du0 {
-        background: #fcfcfc !important;
+        background: var(--bg-theme-color) !important;
     }
 
     /* Shortcuts Dropdown Menu Text Color */
     .css-b4x4dr {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     /* Shortcuts Dropdown Menu Hover */
     .css-b4x4dr:hover {
-        background: #ffd700 !important;
+        background: var(--primary-theme-color) !important;
     }
 
     /* Shortcuts Dropdown Background */
     .css-1ne3m5v {
-        background: #fefefe !important;
+        background: var(--bg-theme-color) !important;
     }
 
     /* Docs Panel */
@@ -259,17 +266,17 @@
     .css-vrh66d,
     .css-1o7g9wl {
         padding: 15px 15px 30px !important;
-        font-weight: bold !important;
+        font-weight: 700 !important;
         font-size: 14px !important;
     }
 
     .css-1p1veyo {
-        box-shadow: #ffd700 0 -3px 0 0 inset !important;
-        background: #fcfcfc !important;
+        box-shadow: var(--primary-theme-color) 0 -3px 0 0 inset !important;
+        background: var(--bg-theme-color) !important;
     }
 
     .css-1kbt4a0 {
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     .css-qqytg {
@@ -277,37 +284,37 @@
     }
 
     .css-hh1fi2 {
-        border-bottom: solid #999999 1px !important;
+        border-bottom: solid var(--fg-theme-color) 1px !important;
     }
 
     .css-bjagbb {
-        border-bottom: 1px solid #999999 !important;
+        border-bottom: 1px solid var(--fg-theme-color) !important;
     }
 
     /* A11y Category Tags */
     .css-sk5w80 {
         margin: 12px 0 0 !important;
         padding-bottom: 20px !important;
-        border-bottom: #999999 solid 1px !important;
+        border-bottom: var(--fg-theme-color) solid 1px !important;
     }
 
     .css-722b76 {
         margin: 0 8px !important;
         padding: 8px 10px !important;
-        border: solid #000013 2px !important;
+        border: solid var(--fg-theme-color) 2px !important;
         border-radius: 8px !important;
-        background-color: #ffd700 !important;
-        font-weight: bold !important;
-        color: #000013 !important;
+        background-color: var(--primary-theme-color) !important;
+        font-weight: 700 !important;
+        color: var(--fg-theme-color) !important;
     }
 
     /* A11y Tests Completed Notice / Button */
     .css-p6m5de {
         padding: 8px 10px !important;
         font-size: 14px !important;
-        font-weight: bold !important;
-        border-top: 2px solid #ffd700 !important;
-        border-left: 2px solid #ffd700 !important;
+        font-weight: 700 !important;
+        border-top: 2px solid var(--primary-theme-color) !important;
+        border-left: 2px solid var(--primary-theme-color) !important;
     }
 
     /* Actions Panel */
@@ -319,33 +326,33 @@
     .css-p6m5de {
         padding: 8px 10px !important;
         font-size: 14px !important;
-        font-weight: bold !important;
-        border-top: 2px solid #ffd700 !important;
-        border-left: 2px solid #ffd700 !important;
+        font-weight: 700 !important;
+        border-top: 2px solid var(--primary-theme-color) !important;
+        border-left: 2px solid var(--primary-theme-color) !important;
     }
 
     /* Controls Reset Button */
     .css-67xjsu {
-        color: #000013 !important;
-        background: #ffd700 !important;
+        color: var(--fg-theme-color) !important;
+        background: var(--primary-theme-color) !important;
         opacity: 1 !important;
-        border: 2px solid #000013 !important;
+        border: 2px solid var(--fg-theme-color) !important;
         border-radius: 12px !important;
         box-shadow: none !important;
     }
 
     .css-67xjsu:hover,
     .css-67xjsu:focus {
-        background: #ffe75d !important;
+        background: var(--primary-theme-color) !important;
         box-shadow: none !important;
     }
 
     /* Controls Args Table Headings */
     .css-1vl5x4b.css-1vl5x4b th {
         padding-top: 14px !important;
-        color: #000013 !important;
+        color: var(--fg-theme-color) !important;
         font-size: 14px !important;
-        border-bottom: #ffd700 solid 3px !important;
+        border-bottom: var(--primary-theme-color) solid 3px !important;
     }
 
     /* Controls Args Table Text */
@@ -357,31 +364,31 @@
 
     /* Controls Args Table Dividers */
     .css-1vl5x4b tbody tr {
-        border-top: #999999 solid 1px !important;
+        border-top: var(--fg-theme-color) solid 1px !important;
     }
 
     .css-1vl5x4b.css-1vl5x4b {
-        border-bottom: #999999 solid 1px !important;
+        border-bottom: var(--fg-theme-color) solid 1px !important;
     }
 
     /* Control Input Textarea */
     .css-xgvyb0 {
         font-size: 14px !important;
-        font-weight: bold !important;
-        color: #000013 !important;
+        font-weight: 700 !important;
+        color: var(--fg-theme-color) !important;
         box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 2px !important;
         border-radius: 4px !important;
     }
 
     .css-xgvyb0:focus {
-        box-shadow: #000013 0 0 0 2px !important;
+        box-shadow: var(--fg-theme-color) 0 0 0 2px !important;
     }
 
     /* Control Select Dropdown */
     .css-sri6fu {
         font-size: 14px !important;
-        font-weight: bold !important;
-        color: #000013 !important;
+        font-weight: 700 !important;
+        color: var(--fg-theme-color) !important;
         box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 2px inset !important;
         cursor: pointer !important;
         border-radius: 4px !important;
@@ -389,7 +396,7 @@
     }
 
     .css-sri6fu:focus {
-        box-shadow: #000013 0 0 0 2px inset !important;
+        box-shadow: var(--fg-theme-color) 0 0 0 2px inset !important;
     }
 
     pre {
