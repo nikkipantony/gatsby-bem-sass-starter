@@ -1,14 +1,32 @@
 /*
- * Header Component Stories
+ * Header Component Story
  *
  */
 
 import React from "react"
-import Header from "./Header"
+import Component from "./Header"
 
 export default {
     title: "Organisms/Header",
-    component: Header,
+    component: Component,
+    parameters: {
+        docs: {
+            description: {
+                component: "Header component.",
+            },
+        },
+    },
+    argTypes: {
+        modifier: {
+            description: "Modifier options",
+            control: {
+                type: "select",
+                labels: {
+                    "": "no modifier",
+                },
+            },
+        },
+    },
 }
 
-export const Working = () => <Header />
+export const Header = args => <Component {...args} />

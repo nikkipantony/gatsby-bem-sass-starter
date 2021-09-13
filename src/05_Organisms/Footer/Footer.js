@@ -7,10 +7,11 @@
  */
 
 import React from "react"
+import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import ExLink from "../../03_Atoms/ExLink/ExLink"
 
-const Footer = () => {
+const Footer = props => {
     const data = useStaticQuery(graphql`
         query FooterSiteTitleQuery {
             site {
@@ -22,7 +23,7 @@ const Footer = () => {
     `)
 
     return (
-        <footer className="footer">
+        <footer className={`footer footer${props.modifier}`}>
             <div className="footer__inner">
                 <p className="footer__text">
                     <small>
@@ -38,6 +39,14 @@ const Footer = () => {
             </div>
         </footer>
     )
+}
+
+Footer.defaultProps = {
+    modifier: "",
+}
+
+Footer.propTypes = {
+    modifier: PropTypes.oneOf([""]),
 }
 
 export default Footer
