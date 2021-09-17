@@ -237,10 +237,6 @@ address {
 
 // Figure Captions
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
-figure img {
-    border: border(default);
-}
-
 figcaption {
     font-size: font-size(cs);
     font-weight: font-weight(bold);
@@ -249,7 +245,7 @@ figcaption {
     opacity: opacity(o75);
     line-height: leading(tall);
     text-align: left;
-    margin-top: spacing(xxs);
+    margin: spacing(m) 0 0 spacing(s);
 }
 
 // Quotation
