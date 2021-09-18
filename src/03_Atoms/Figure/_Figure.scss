@@ -3,14 +3,14 @@
  *
  */
 
-figure.figure,
+figure,
 .figure {
     width: 100%;
 
+    img,
     &__image {
         border: border(default);
         box-shadow: spacing(s) spacing(s) 0 0 brand-color(midnight);
-        width: 100%;
     }
 
     &--maxWidth500 {
