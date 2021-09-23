@@ -56,7 +56,7 @@
     - [👨‍💻 Development](#development)
     - [🧱 Build](#build)
     - [📚 Docs](#docs) <!-- Remove docs section from here once Ally docs are complete -->
-3. [🎁 Kit Features](#kit-features)
+3. [🎁 Kit features](#kit-features)
     <!-- 4.  [👋 Contributing](#contributing) -->
     <!-- 5. [👋 License](#license) -->
     <!-- 6. [👋 Contact](#contact) -->
