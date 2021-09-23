@@ -4,6 +4,7 @@
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
         "pkief.material-icon-theme",
-        "silvenon.mdx"
+        "silvenon.mdx",
+        "hoovercj.vscode-power-mode"
     ]
 }

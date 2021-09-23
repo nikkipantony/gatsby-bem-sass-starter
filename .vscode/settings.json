@@ -1,7 +1,8 @@
 {
 	"window.zoomLevel": 1,
 
-	"workbench.colorTheme": "Visual Studio Dark",
+	"powermode.enabled": true,
+	"workbench.colorTheme": "Monokai Pro",
 	"workbench.iconTheme": "material-icon-theme",
 
 	"material-icon-theme.activeIconPack": "react",
@@ -32,7 +33,8 @@
 		"Icon": "SVG"
 	},
 	"material-icon-theme.files.associations": {
-		"*.js": "react"
+		"*.js": "react",
+		"*.md": "mdx"
 	},
 
 	"scss.validate": true,
@@ -177,5 +179,8 @@
 		"zlayer",
 		"zlayers",
 		"zvpvep"
+	],
+	"auto-rename-tag.activationOnLanguage": [
+		"*"
 	]
 }
