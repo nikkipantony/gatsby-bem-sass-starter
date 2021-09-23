@@ -28,8 +28,8 @@ module.exports = {
         "@storybook/addon-docs",
         "storybook-addon-jsx",
         "@storybook/addon-measure",
+        "@storybook/addon-viewport",
         // "@storybook/addon-links",
-        // "@storybook/addon-viewport",
         // "storybook-addon-designs",
     ],
 
