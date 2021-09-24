@@ -22,8 +22,6 @@
 
 <!-- /Repo Info Shields -->
 
-<br />
-
 Powered by:
 
 <!-- Tech Shields https://shields.io -->
@@ -248,22 +246,28 @@ For further documentation see:
 
 When released the Ally starter kit will include:
 
--   An Atomic Design project architecture.
--   Gatsby powered development environment and plugins.
--   Storybook powered visual testing environment and plugins.
--   Storybook Docs powered Design System.
--   Design Tokens JSON file generated from SASS(SCSS) values.
--   Unit testing with Jest and CircleCI (This may not be included in the first version of the kit).
--   Styling written in nested SASS(SCSS) using the BEM naming convention.
--   Markdown files as the content source for pages by default but can be extended to use any CMS of your choice.
--   Pre-built base React UI components (A11y compliant) including:
-    -   `SEO` component.
-    -   `SkipLink` component.
-    -   `Header` component.
-    -   `Menu` navigation component.
-    -   `Footer` component.
-    -   Default `PageTemplate`.
-    -   `Modal` component.
+-   An `Atomic Design` project architecture.
+-   `Gatsby` powered development environment and plugins.
+-   `Storybook` powered visual testing environment and plugins.
+-   `Storybook Docs` powered Design System.
+-   `Design Tokens` JSON file generated from SASS(SCSS) values.
+-   Unit testing with `Jest` and `CircleCI` [may not be included in the first version of the kit].
+-   Styling written in nested `SASS(SCSS)` using the `BEM` naming convention.
+-   `Markdown` files as the content source for pages by default but can be extended to use any CMS of your choice.
+-   Pre-built base `React` UI components using best practices and `A11y` compliant including:
+    -   `Typography` (Extensive) guidelines.
+    -   `SEO` (Utility) component.
+    -   `Button` (Atom) component.
+    -   `External Link` (Atom) component.
+    -   `Figure` (Atom) component.
+    -   `Icon` (Atom) component.
+    -   `Navigation Link` (Atom) component.
+    -   `Skip Link` (Atom) component.
+    -   `Menu` (Molecule) component.
+    -   `Modal` (Molecule) component [may not be included in the first version of the kit].
+    -   `Header`(Organism) component.
+    -   `Footer` (Organism) component.
+    -   `Main Layout` (Template) component.
 
 <!-- /Kit Features Section -->
 
