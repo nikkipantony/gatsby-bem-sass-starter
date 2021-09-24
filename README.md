@@ -290,8 +290,6 @@ As Ally is powered by Gatsby and Storybook, both of which build static sites you
 
 This is a collection of a few services to choose from but there are also plenty more out there.
 
----
-
 ### Vercel
 
 [vercel.com](https://vercel.com)
@@ -330,7 +328,7 @@ This is a collection of a few services to choose from but there are also plenty 
 
 ---
 
-### Deploy to Render
+### Render
 
 <!-- replace  <username> and <project_name> with your repositories details to deploy -->
 
@@ -350,7 +348,7 @@ This is a collection of a few services to choose from but there are also plenty 
 
 ---
 
-### Run on Google Cloud
+### Google Cloud
 
 [cloud.google.com/storage/docs/hosting-static-website](https://cloud.google.com/storage/docs/hosting-static-website)
 
