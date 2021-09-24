@@ -30,7 +30,7 @@ Powered by:
 
 ![Gatsby](https://img.shields.io/badge/Gatsby-663399?style=flat-square&logo=gatsby&logoColor=fff)
 ![Storybook](https://img.shields.io/badge/Storybook-ff4785?style=flat-square&logo=storybook&logoColor=fff)
-![Figma](https://img.shields.io/badge/Figma-C7B9FF?style=flat-square&logo=figma&logoColor=333)
+![Figma](https://img.shields.io/badge/Figma-FF7262?style=flat-square&logo=figma&logoColor=fff)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=333)
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=fff)
 ![Markdown](https://img.shields.io/badge/Markdown-333?style=flat-square&logo=markdown&logoColor=fff)
@@ -406,7 +406,7 @@ Powered by
 
 ![Gatsby](https://img.shields.io/badge/Gatsby-663399?style=flat-square&logo=gatsby&logoColor=fff)
 ![Storybook](https://img.shields.io/badge/Storybook-ff4785?style=flat-square&logo=storybook&logoColor=fff)
-![Figma](https://img.shields.io/badge/Figma-C7B9FF?style=flat-square&logo=figma&logoColor=333)
+![Figma](https://img.shields.io/badge/Figma-FF7262?style=flat-square&logo=figma&logoColor=fff)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=333)
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=fff)
 ![Markdown](https://img.shields.io/badge/Markdown-333?style=flat-square&logo=markdown&logoColor=fff)
