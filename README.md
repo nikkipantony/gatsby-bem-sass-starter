@@ -128,11 +128,11 @@ If you do not already have the Gatsby CLI installed, you can install it globally
 
 #### _1. Create a new repository from this starter kit._
 
-Do this by simply clicking the `'Use this template'` button at the top right of this page, then follow the onscreen directions.
+Do this by simply clicking the `Use this template` button at the top right of this page, then follow the onscreen directions.
 
 #### _2. Setup your project locally._
 
-Clone your project repository locally using your preferred method. To use Git type the following in your command line or alternatively use GitHub Desktop by clicking `'code'` then `'Open with GitHub Desktop'`.
+Clone your project repository locally using your preferred method. To use Git type the following in your command line or alternatively use GitHub Desktop by clicking the `Code` button then `Open with GitHub Desktop`.
 
     git clone https://github.com/<user or organization>/<repo name>
 
@@ -222,9 +222,9 @@ To serve your Storybook Docs powered design system at `http://localhost:8082`:
 
 ### Docs
 
-For further documentation see:
+For further documentation/information see:
 
-<!-- -   Ally Design System docs at [ally.github.io](https://ally.github.io) -->
+<!-- -   Ally Design System docs at [ally-ds.github.io](https://ally-ds.github.io) -->
 
 -   Gatsby docs at [gatsbyjs.org/docs](https://www.gatsbyjs.org/docs)
 -   Storybook docs at [storybook.js.org/docs](https://storybook.js.org/docs/react/get-started/introduction)
