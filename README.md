@@ -4,7 +4,7 @@
 
 <!-- /Warning -->
 
----
+<br />
 
 <!-- Hero  -->
 
@@ -22,9 +22,11 @@
 
 <!-- /Repo Info Shields -->
 
----
+<br />
 
 Powered by:
+
+<!-- Tech Shields https://shields.io -->
 
 ![Gatsby](https://img.shields.io/badge/Gatsby-663399?style=flat-square&logo=gatsby&logoColor=fff)
 ![Storybook](https://img.shields.io/badge/Storybook-ff4785?style=flat-square&logo=storybook&logoColor=fff)
@@ -35,27 +37,12 @@ Powered by:
 ![Sass](https://img.shields.io/badge/Sass-BF4080?style=flat-square&logo=sass&logoColor=fff)
 ![Prettier](https://img.shields.io/badge/Prettier-EA5E5E?style=flat-square&logo=prettier&logoColor=fff)
 
-<!-- Tech Logos -->
-<!-- <div style="margin: 20px 0 10px" >
-    <img alt="Gatsby Logo" src="./src/08_Images/logos/GatsbyIconLogo.png" width="32" style="margin-right: 5px" />
-    <img alt="Storybook Logo" src="./src/08_Images/logos/StorybookIconLogo.png" width="32" style="margin-right: 5px" />
-    <img alt="Figma Logo" src="./src/08_Images/logos/FigmaIconLogo.png" width="32" style="margin-right: 5px" />
-    <img alt="React JS Logo" src="./src/08_Images/logos/ReactIconLogo.png" width="32" style="margin-right: 5px" />
-    <img alt="Sass Logo" src="./src/08_Images/logos/SassIconLogo.png" width="32" style="margin-right: 5px" />
-    <img alt="BEM Logo" src="./src/08_Images/logos/BEMIconLogo.png" width="32" style="margin-right: 5px" />
-    <img alt="GraphQL Logo" src="./src/08_Images/logos/GraphQLIconLogo.png" width="32" style="margin-right: 5px" />
-    <img alt="Atomic Design Logo" src="./src/08_Images/logos/AtomicDesignIconLogo.png" width="32" style="margin-right: 5px" />
-    <img alt="Prettier Logo" src="./src/08_Images/logos/PrettierIconLogo.png" width="32" style="margin-right: 5px" />
-    <!-- TODO - Update to MDX When fully working
-    <img alt="Markdown Logo" src="./src/08_Images/logos/MarkdownIconLogo.png" width="32" />
-</div> -->
-
-<!-- /Tech Logos -->
+<!-- /Tech Shields https://shields.io -->
 
 <!-- /Hero  -->
 
 <br />
-
+<br />
 <!-- Table of Contents -->
 
 **Table of Content**
@@ -79,8 +66,7 @@ Powered by:
 
 <!-- /Table of Contents -->
 
----
-
+<br />
 <br />
 
 <!-- Introduction Section -->
@@ -106,6 +92,8 @@ Ally's docs for Developers can be found at: <a href="https://ally.github.io/gett
 
 <!-- /Introduction Section -->
 
+<br />
+
 ---
 
 <br />
@@ -130,6 +118,12 @@ If you do not already have the Gatsby CLI installed, you can install it globally
 
     npm install -g gatsby-cli
 
+<br />
+
+---
+
+<br />
+
 🔽
 
 ### Installation
@@ -143,6 +137,12 @@ Do this by simply clicking the `'Use this template'` button at the top right of 
 Clone your project repository locally using your preferred method. To use Git type the following in your command line or alternatively use GitHub Desktop by clicking `'code'` then `'Open with GitHub Desktop'`.
 
     git clone https://github.com/<user or organization>/<repo name>
+
+<br />
+
+---
+
+<br />
 
 👨‍💻
 
@@ -176,6 +176,12 @@ And for just developing in the Storybook Docs powered design system environment 
 
 _Note:_ You can also have all three of these environments running simultaneously if needed.
 
+<br />
+
+---
+
+<br />
+
 🧱
 
 ### Build
@@ -208,6 +214,12 @@ To serve your Storybook Docs powered design system at `http://localhost:8082`:
 
     npm run serve-d
 
+<br />
+
+---
+
+<br />
+
 📚
 
 ### Docs
@@ -222,9 +234,11 @@ For further documentation see:
 
 <!-- /Getting Started Section -->
 
+<br />
+
 ---
 
-<div style="margin: 40px 0"></div>
+<br />
 
 <!-- Kit Features Section -->
 
@@ -258,9 +272,11 @@ When released the Ally starter kit will include:
 <!-- ## Contact -->
 <!-- ## Acknowledgements -->
 
+<br />
+
 ---
 
-<div style="margin: 40px 0"></div>
+<br />
 
 <!-- Deployment Section -->
 
@@ -362,9 +378,11 @@ This is a collection of a few services to choose from but there are also plenty 
 
 <!-- /Deployment Section -->
 
+<br />
+
 ---
 
-<div style="margin: 40px 0"></div>
+<br />
 
 <!-- Built with Ally Badge -->
 
@@ -381,18 +399,10 @@ Thanks, and I hope you enjoy building with Ally.
 <!-- /////////////// //\\ || || \\// /////////////// -->
 <!-- Built with Ally Design System Starter Kit Badge -->
 
-<!-- <img alt="Gatsby" src="./src/08_Images/logos/GatsbyIconLogo.png" width="24" />&nbsp;
-<img alt="Storybook" src="./src/08_Images/logos/StorybookIconLogo.png" width="24" />&nbsp;
-<img alt="Figma" src="./src/08_Images/logos/FigmaIconLogo.png" width="23" />&nbsp;
-<img alt="React" src="./src/08_Images/logos/ReactIconLogo.png" width="24" />&nbsp;
-<img alt="Sass" src="./src/08_Images/logos/SassIconLogo.png" width="24" />&nbsp;
-<img alt="BEM" src="./src/08_Images/logos/BEMIconLogo.png" width="24" />&nbsp;
-<img alt="GraphQL" src="./src/08_Images/logos/GraphQLIconLogo.png" width="24" />&nbsp;
-<img alt="Atomic Design" src="./src/08_Images/logos/AtomicDesignIconLogo.png" width="24" />&nbsp;
-<img alt="Prettier" src="./src/08_Images/logos/PrettierIconLogo.png" width="24" />&nbsp;
-<img alt="Markdown Logo" src="./src/08_Images/logos/MarkdownIconLogo.png" width="24" /> -->
-
 [![Ally](https://img.shields.io/badge/Built_with_the_Ally_Deisign_System_Starter_Kit_💨-ffd700?style=for-the-badge)](https://github.com/nikkipantony/ally-design-system-starter-kit)
+
+<!-- /Built with Ally Design System Starter Kit Badge -->
+<!-- /////////////// //\\ || || \\// //////////////// -->
 
 Powered by
 
@@ -404,8 +414,5 @@ Powered by
 ![Markdown](https://img.shields.io/badge/Markdown-333?style=flat-square&logo=markdown&logoColor=fff)
 ![Sass](https://img.shields.io/badge/Sass-BF4080?style=flat-square&logo=sass&logoColor=fff)
 ![Prettier](https://img.shields.io/badge/Prettier-EA5E5E?style=flat-square&logo=prettier&logoColor=fff)
-
-<!-- /Built with Ally Design System Starter Kit Badge -->
-<!-- /////////////// //\\ || || \\// //////////////// -->
 
 <!-- /Built with Ally Badge -->
